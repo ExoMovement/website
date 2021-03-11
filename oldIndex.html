@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<title>Exo-Movement</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link script=testscript.js href="testscript.js">
+<style>
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("res/Full_Spine_Assembly_2020-Mar-31.png");
+  min-height: 100%;
+}
+
+.w3-bar {
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+.logoImage {
+  position: relative;
+  height: 100%;
+  padding-left: 0px;
+  margin-left: -65px;
+  margin-right: -65px;
+}
+
+.noPadding {
+  background-color: black;
+}
+
+.logoClick {
+  position: absolute;
+  height: 100%;
+  margin-left: 0px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide logoClick">
+      <img src="res/ExoMovement-LetteringLogo.png" class="logoImage"/>
+    </a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> PROJECTS</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRODUCTS & SERVICES</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i>CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRODUCTS & SERVICES</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-black" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Exo-Movement</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Exo-Movement</span><br>
+    <span class="w3-large">Harness the power of a god</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more</a></p>
+  </div> 
+  <!--
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  -->
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">TRAITS</h3>
+  <p class="w3-center w3-large">We put all we are into our work</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Computer Screen</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Heart</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Diamond</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Gear</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Motivation Section  -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Motivation</h3>
+      <p>There are currently 5.4 million people in America suffering from paralysis. They cannot stand, walk or lift anything without some form of assistance and their medical bills can run upwards of $2.5 million over the course of their lives. This is unacceptable and from a first hand account, these people are unhappy with the current options available to them. For this reason we have decided to seek a viable solution to a literal multimillion dollar and people problem. We are working to create an affordable device to better the lives of these individuals and let them return to some form of normalcy.</p>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i>Projects</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Pie Chart for Paralysis" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">THE TEAM</h3>
+  <p class="w3-center w3-large"></p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team2.jpg" alt="Odin" style="width:100%">
+        <div class="w3-container">
+          <h3>Odin Francis</h3>
+          <p class="w3-opacity">Founder and Head of Research & Development</p>
+          <p>Current Boston University undergraduate. Has over five years experience with CAD, robotics, and scientific research</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team1.jpg" alt="Dylan" style="width:100%">
+        <div class="w3-container">
+          <h3>Dylan Finn</h3>
+          <p class="w3-opacity">Partner & Head of Biotech and Lead Software Engineer</p>
+          <p>Current NYIT undergraduate junior. Has over six years of robotics experience and is proficient with machine learning</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team3.jpg" alt="Ian" style="width:100%">
+        <div class="w3-container">
+          <h3>Ian Page</h3>
+          <p class="w3-opacity">Assistant Engineer</p>
+          <p>Current Boston University undergraduate. Has experience working with orthotics and prosthesis as well as a history with CAD modeling. Has the Ability to create perfect rice</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="res/team/Sean.jpg" alt="Sean" style="width:100%">
+        <div class="w3-container">
+          <h3>Sean McNamee</h3>
+          <p class="w3-opacity">Assistant Software Engineer</p>
+          <p>Current NYIT undergraduate senior. Specializes in web development and predictive machine learning algorithms. Experience in Java, HTML5, python, and C/C++/C#.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">3+</span>
+    <br>Iterations
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">3+</span>
+    <br>Donations
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">4+</span>
+    <br>Employees
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">200+</span>
+    <br>Working Hours
+  </div>
+</div>
+
+<!-- Iteration Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">PROJECTS</h3>
+  <p class="w3-center w3-large">Our previous and current work</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Skills Section -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Our Skills.</h3>
+      <p>From snapping spines to creating the ultimate lifting experience, we've done it all thanks to our iterative approach!</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Mark 1</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:0%">0%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Mark 2</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:0%">0%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Mark 3</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:0%">0%</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Pricing Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+  <h3>PRODUCTS & SERVICES</h3>
+  <p class="w3-large">Don't see what you're looking for? <a href="#contact" class="w3-hover-text-black">Let us know</a> and we'll let you know what we can do</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-blue w3-xlarge w3-padding-32">Service 1</li>
+        <li class="w3-padding-16"><b>10 min</b> pp suk</li>
+        <li class="w3-padding-16"><b>10</b> Emails</li>
+        <li class="w3-padding-16"><b>10</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 10</h2>
+          <span class="w3-opacity">per minute</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-blue w3-xlarge w3-padding-32">Service 2</li>
+        <li class="w3-padding-16"><b>25GB</b> Storage</li>
+        <li class="w3-padding-16"><b>25</b> Emails</li>
+        <li class="w3-padding-16"><b>25</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 25</h2>
+          <span class="w3-opacity">per hour</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-blue w3-xlarge w3-padding-32">Service 3</li>
+        <li class="w3-padding-16"><b>50GB</b> Storage</li>
+        <li class="w3-padding-16"><b>50</b> Emails</li>
+        <li class="w3-padding-16"><b>50</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 50</h2>
+          <span class="w3-opacity">per hour</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-blue w3-xlarge w3-padding-32">Service 4</li>
+        <li class="w3-padding-16"><b>50GB</b> Storage</li>
+        <li class="w3-padding-16"><b>50</b> Emails</li>
+        <li class="w3-padding-16"><b>50</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 50</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Product 1</li>
+        <li class="w3-padding-16"><b>50GB</b> Storage</li>
+        <li class="w3-padding-16"><b>50</b> Emails</li>
+        <li class="w3-padding-16"><b>50</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$50 down payment</h2>
+          <span class="w3-opacity">$10 reoccuring monthly</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <!-- <a href="ETSY LINK" class=""> -->
+            <button class="w3-button w3-black w3-padding-large">  Sign Up</button>
+          <!-- </a>   -->
+        </li>
+      </ul>
+    </div>
+
+
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:64px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> New York, US</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: info@exo-movement.com</p>
+    <br>
+      <p><input class="w3-input w3-border" type="text" id="ContactName" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" id="ContactSubject" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" id="ContactMessage" placeholder="Message" required name="Message"></p>
+      <p>
+        <p id="ContactFeedback" style="color: red"></p>
+        <button class="w3-button w3-black" type="submit" onClick="testFunc()">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    <!-- Image of location/map -->
+    <img src="res/NYC.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <!--
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    -->
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+function testFunc() {
+  console.log("test");
+
+  //info@exo-movement.com
+  var subj = document.getElementById("ContactSubject").value;
+  var body = document.getElementById("ContactMessage").value;
+  var name = document.getElementById("ContactName").value;
+
+  if (subj == "" || body == "" || name == "") {
+    document.getElementById("ContactFeedback").innerHTML = "All fields are required";
+  } else {
+    document.getElementById("ContactFeedback").innerHTML = "";
+    window.open('mailto:info@exo-movement.com?subject=Website: ' + subj + '&body=' + body + "%0D%0A%0D%0ASincerely,%0D%0A" + name);
+  }
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
