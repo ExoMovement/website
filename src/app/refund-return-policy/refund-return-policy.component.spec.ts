@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { NavbarComponent } from '../navbar/navbar.component';
 
 import { RefundReturnPolicyComponent } from './refund-return-policy.component';
 
@@ -8,7 +9,7 @@ describe('RefundReturnPolicyComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RefundReturnPolicyComponent ]
+      declarations: [ RefundReturnPolicyComponent, NavbarComponent ]
     })
     .compileComponents();
   });

@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { NavbarComponent } from '../navbar/navbar.component';
 
 import { ContactComponent } from './contact.component';
 
@@ -8,7 +9,7 @@ describe('ContactComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ContactComponent ]
+      declarations: [ ContactComponent, NavbarComponent ]
     })
     .compileComponents();
   });
