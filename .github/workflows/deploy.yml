@@ -7,7 +7,7 @@ on:
   push:
     branches: [ main ]
 jobs:
-  lint-and-unit-test:
+  lint_and_unit_test:
     runs-on: ubuntu-latest
     steps: 
       - name: Checkout
@@ -29,7 +29,7 @@ jobs:
         run:
           npm run test:ci
 
-  end-to-end-test:
+  end_to_end_test:
     runs-on: ubuntu-latest
     steps: 
       - name: Checkout
@@ -48,7 +48,7 @@ jobs:
           npm run e2e:cypress:ci
   
   deploy:
-    needs: [lint-and-unit-test, end-to-end-test]
+    needs: [lint_and_unit_test, end_to_end_test]
     runs-on: ubuntu-latest 
     steps: 
       - name: Checkout

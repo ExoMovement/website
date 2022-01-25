@@ -9,7 +9,6 @@ on:
 jobs:
   lint_and_unit_test:
     runs-on: ubuntu-latest
-
     steps: 
       - name: Checkout
         uses: actions/checkout@v2
@@ -32,7 +31,6 @@ jobs:
 
   end_to_end_test:
     runs-on: ubuntu-latest
-
     steps: 
       - name: Checkout
         uses: actions/checkout@v2
