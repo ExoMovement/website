@@ -7,10 +7,9 @@ on:
   push:
     branches: [ main ]
 jobs:
-   build-and-deploy:
-     runs-on: ubuntu-latest
-     
-     steps: 
+  lint_and_unit_test:
+    runs-on: ubuntu-latest
+    steps: 
       - name: Checkout
         uses: actions/checkout@v2
       
@@ -30,9 +29,38 @@ jobs:
         run:
           npm run test:ci
 
+  end_to_end_test:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+
+      - name: Setup
+        run: npm ci
+          
       - name: End-To-End Test with Cypress
         run:
           npm run e2e:cypress:ci
+  
+  deploy:
+    needs: [lint_and_unit_test, end_to_end_test]
+    runs-on: ubuntu-latest 
+    steps: 
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+
+      - name: Setup
+        run: npm ci
 
       - name: Conventional Changelog Action
         id: changelog
