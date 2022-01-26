@@ -11,6 +11,7 @@ export class NavbarComponent implements OnInit {
   public get NavBarType(): typeof NavBarType {
     return NavBarType; 
   }
+  active = 1;
 
   constructor() { }
 
