@@ -9,6 +9,14 @@ nav .navbar-nav li a{
     color: #000000 !important;
     display: block;
 }
+
+
+.navbar-brand img {
+    object-fit: contain;
+}
+
+
+
 /*nav .navbar-nav li a:hover{
     color: #8AAAE5 !important;
     text-decoration: underline;
