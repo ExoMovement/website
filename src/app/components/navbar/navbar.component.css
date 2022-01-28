@@ -10,8 +10,8 @@ nav .navbar-nav li a{
     display: block;
 }
 
-
 .navbar-brand img {
+    max-width: 100%;
     object-fit: contain;
 }
 
