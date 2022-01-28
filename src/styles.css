@@ -1,11 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Ensure the page takes up the entire page and has no horizontal scrollbars */
 html, body {
   max-width: 100%;
   overflow-x: hidden;
-}
-a, a:visited, a:active {
-    color: inherit;
-  }
-a:hover {
-    color: #8AAAE5;
 }

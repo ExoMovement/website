@@ -1,37 +1,117 @@
-/* Colors to be used throughout the website */
-.exo-font-primary {
-  color: #0035E2;
+/* Colors to be used throughout the website.
+
+Usage as follows, where [] is optional, and (a|b) means you must choose a OR b
+
+exo-[children-][hover](font|background)-<COLOR>
+
+- children: affect all children off the following types:
+    - <a>
+    - <p>
+    - <label>
+- hover: affect the color when the user's mouse hovers over the element
+- font: affect the text color
+- background: affect the background color
+- <COLOR>: the color. Options are as follows:
+    - primary
+    - accent
+    - black
+    - white
+    - grey
+    - lightgrey
+*/
+
+
+/* primary */
+.exo-font-primary, .exo-hoverfont-primary:hover,
+.exo-children-font-primary a, .exo-children-font-primary label, .exo-children-font-primary p,
+.exo-children-hoverfont-primary a:hover, .exo-children-hoverfont-primary label:hover, .exo-children-hoverfont-primary p:hover   {
+  color: #0035E2 !important;
 }
-.exo-background-primary {
-  background-color: #0035E2;
+
+.exo-background-primary, .exo-hoverbackground-primary:hover,
+.exo-children-background-primary a, .exo-children-background-primary label, .exo-children-background-primary p,
+.exo-children-hoverbackground-primary a:hover, .exo-children-hoverbackground-primary label:hover, .exo-children-hoverbackground-primary p:hover {
+  background-color: #0035E2 !important;
 }
-.exo-font-accent {
-  color: #8AAAE5;
+
+
+
+
+/* accent */
+
+.exo-font-accent, .exo-hoverfont-accent:hover,
+.exo-children-font-accent a, .exo-children-font-accent label, .exo-children-font-accent p,
+.exo-children-hoverfont-accent a:hover, .exo-children-hoverfont-accent label:hover, .exo-children-hoverfont-accent p:hover   {
+  color: #8AAAE5 !important;
 }
-.exo-background-accent {
-  background-color: #8AAAE5;
+
+.exo-background-accent, .exo-hoverbackground-accent:hover,
+.exo-children-background-accent a, .exo-children-background-accent label, .exo-children-background-accent p,
+.exo-children-hoverbackground-accent a:hover, .exo-children-hoverbackground-accent label:hover, .exo-children-hoverbackground-accent p:hover {
+  background-color: #8AAAE5 !important;
 }
-.exo-font-black {
-  color: #000000;
+
+
+
+
+/* black */
+.exo-font-black, .exo-hoverfont-black:hover,
+.exo-children-font-black a, .exo-children-font-black label, .exo-children-font-black p,
+.exo-children-hoverfont-black a:hover, .exo-children-hoverfont-black label:hover, .exo-children-hoverfont-black p:hover   {
+  color: #000000 !important;
 }
-.exo-background-black {
-  background-color: #000000;
+
+.exo-background-black, .exo-hoverbackground-black:hover,
+.exo-children-background-black a, .exo-children-background-black label, .exo-children-background-black p,
+.exo-children-hoverbackground-black a:hover, .exo-children-hoverbackground-black label:hover, .exo-children-hoverbackground-black p:hover {
+  background-color: #000000 !important;
 }
-.exo-font-grey {
-  color: #212121;
+
+
+
+
+
+/* white */
+.exo-font-white, .exo-hoverfont-white:hover,
+.exo-children-font-white a, .exo-children-font-white label, .exo-children-font-white p,
+.exo-children-hoverfont-white a:hover, .exo-children-hoverfont-white label:hover, .exo-children-hoverfont-white p:hover   {
+  color: #FFFFFF !important;
 }
-.exo-background-grey {
-  background-color: #212121;
+
+.exo-background-white, .exo-hoverbackground-white:hover,
+.exo-children-background-white a, .exo-children-background-white label, .exo-children-background-white p,
+.exo-children-hoverbackground-white a:hover, .exo-children-hoverbackground-white label:hover, .exo-children-hoverbackground-white p:hover {
+  background-color: #FFFFFF !important;
 }
-.exo-font-white {
-  color: #FFFFFF;
+
+
+
+
+
+/* grey */
+.exo-font-grey, .exo-hoverfont-grey:hover,
+.exo-children-font-grey a, .exo-children-font-grey label, .exo-children-font-grey p,
+.exo-children-hoverfont-grey a:hover, .exo-children-hoverfont-grey label:hover, .exo-children-hoverfont-grey p:hover   {
+  color: #212121 !important;
 }
-.exo-background-white {
-  background-color: #FFFFFF;
+
+.exo-background-grey, .exo-hoverbackground-grey:hover,
+.exo-children-background-grey a, .exo-children-background-grey label, .exo-children-background-grey p,
+.exo-children-hoverbackground-grey a:hover, .exo-children-hoverbackground-grey label:hover, .exo-children-hoverbackground-grey p:hover {
+  background-color: #212121 !important;
 }
-.exo-font-lightgrey {
-  color: #f9f9f9;
+
+
+
+/* lightgrey */
+.exo-font-lightgrey, .exo-hoverfont-lightgrey:hover,
+.exo-children-font-lightgrey a, .exo-children-font-lightgrey label, .exo-children-font-lightgrey p,
+.exo-children-hoverfont-lightgrey a:hover, .exo-children-hoverfont-lightgrey label:hover, .exo-children-hoverfont-lightgrey p:hover   {
+  color: #f9f9f9 !important;
 }
-.exo-background-lightgrey {
-  background-color: #f9f9f9;
+
+.exo-background-lightgrey, .exo-hoverbackground-lightgrey:hover,
+.exo-children-background-lightgrey a, .exo-children-background-lightgrey label, .exo-children-background-lightgrey p,
+.exo-children-hoverbackground-lightgrey a:hover, .exo-children-hoverbackground-lightgrey label:hover, .exo-children-hoverbackground-lightgrey p:hover {
+  background-color: #f9f9f9 !important;
 }
