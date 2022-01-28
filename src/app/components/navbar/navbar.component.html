@@ -1,49 +1,38 @@
 <div *ngIf="type === NavBarType.Home">
-    <nav class="navbar navbar-expand-md navbar-light exo-background-white fixed-top nav">
-        <div class="col-md-4">
-          <a class="navbar-brand" href="#">
-            <img src="././assets/navbar/Exo-Logo.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-8">
-          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link nav1-link" href="Home">Home </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Contact">Contact</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-    </nav>
+  <nav class="navbar navbar-expand-md navbar-light exo-background-white fixed-top">
+    <div class="col-lg-4 col-md-6 col-sm-7 col-8">
+      <a class="navbar-brand" href="#">
+        <img src="././assets/navbar/Exo-Logo.png" alt="">
+      </a>
+    </div>
+    <div class="col-lg-8 col-md-6 col-sm-5 col-2">
+      <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto  ">
+          <li class="nav-item">
+            <a class="nav-link nav1-link" href="Home">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </div>
-
-<!--
-
-
-
-
-
-
- -->
-
 
 <div *ngIf="type === NavBarType.Services">
     <nav>

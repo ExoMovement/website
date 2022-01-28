@@ -5,16 +5,17 @@ nav{
     font-size: 18px;
     z-index: 1;
 }
+nav .navbar>li{
+    display: inline-block;
+}
 nav .navbar-nav li a{
     color: #000000 !important;
-    display: block;
 }
 
 .navbar-brand img {
     max-width: 100%;
     object-fit: contain;
 }
-
 
 
 /*nav .navbar-nav li a:hover{
