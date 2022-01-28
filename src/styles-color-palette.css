@@ -2,7 +2,7 @@
 
 Usage as follows, where [] is optional, and (a|b) means you must choose a OR b
 
-exo-[children-][hover](font|background)-<COLOR>
+exo-[children-][hover](font|background)-[(before|after)-]<COLOR>
 
 - children: affect all children off the following types:
     - <a>
@@ -21,49 +21,105 @@ exo-[children-][hover](font|background)-<COLOR>
 */
 
 
-/* primary */
-.exo-font-primary, .exo-hoverfont-primary:hover,
-.exo-children-font-primary a, .exo-children-font-primary label, .exo-children-font-primary p,
-.exo-children-hoverfont-primary a:hover, .exo-children-hoverfont-primary label:hover, .exo-children-hoverfont-primary p:hover   {
+
+/* primary #0035E2 */
+.exo-font-primary,  /* 0010 */
+.exo-hoverfont-primary:hover, /*0110 */
+.exo-children-font-primary a, .exo-children-font-primary label, .exo-children-font-primary p, /* 1010 */
+.exo-children-hoverfont-primary a:hover, .exo-children-hoverfont-primary label:hover, .exo-children-hoverfont-primary p:hover, /* 1110 */
+.exo-font-before-primary::before, /* 0011 */
+.exo-hoverfont-before-primary:hover::before, /* 0111 */
+.exo-children-font-before-primary a::before, .exo-children-font-before-primary label::before, .exo-children-font-before-primary p::before, /* 1011 */
+.exo-children-hoverfont-before-primary a:hover::before, .exo-children-hoverfont-before-primary label:hover::before, .exo-children-hoverfont-before-primary p:hover::before, /* 1111 */
+.exo-font-after-primary::after, /* 0012 */
+.exo-hoverfont-after-primary:hover::after, /* 0112 */
+.exo-children-font-after-primary a::after, .exo-children-font-after-primary label::after, .exo-children-font-after-primary p::after, /* 1012 */
+.exo-children-hoverfont-after-primary a:hover::after, .exo-children-hoverfont-after-primary label:hover::after, .exo-children-hoverfont-after-primary p:hover::after /* 1112 */  {
   color: #0035E2 !important;
 }
 
-.exo-background-primary, .exo-hoverbackground-primary:hover,
-.exo-children-background-primary a, .exo-children-background-primary label, .exo-children-background-primary p,
-.exo-children-hoverbackground-primary a:hover, .exo-children-hoverbackground-primary label:hover, .exo-children-hoverbackground-primary p:hover {
+.exo-background-primary, /* 0020 */
+.exo-hoverbackground-primary:hover, /* 0120 */
+.exo-children-background-primary a, .exo-children-background-primary label, .exo-children-background-primary p, /* 1020 */
+.exo-children-hoverbackground-primary a:hover, .exo-children-hoverbackground-primary label:hover, .exo-children-hoverbackground-primary p:hover, /* 1120 */
+.exo-background-before-primary::before, /* 0021 */ 
+.exo-hoverbackground-before-primary:hover::before, /* 0121 */
+.exo-children-background-before-primary a::before, .exo-children-background-before-primary label::before, .exo-children-background-before-primary p::before, /* 1021 */
+.exo-children-hoverbackground-before-primary a:hover::before, .exo-children-hoverbackground-before-primary label:hover::before, .exo-children-hoverbackground-before-primary p:hover::before, /* 1121 */
+.exo-background-after-primary::after, /* 0022 */
+.exo-hoverbackground-after-primary:hover::after, /* 0122 */
+.exo-children-background-after-primary a::after, .exo-children-background-after-primary label::after, .exo-children-background-after-primary p::after, /* 1022 */
+.exo-children-hoverbackground-after-primary a:hover::after, .exo-children-hoverbackground-after-primary label:hover::after, .exo-children-hoverbackground-after-primary p:hover::after { /* 1122 */
   background-color: #0035E2 !important;
 }
 
 
 
 
-/* accent */
 
-.exo-font-accent, .exo-hoverfont-accent:hover,
-.exo-children-font-accent a, .exo-children-font-accent label, .exo-children-font-accent p,
-.exo-children-hoverfont-accent a:hover, .exo-children-hoverfont-accent label:hover, .exo-children-hoverfont-accent p:hover   {
+/* accent #8AAAE5 */
+.exo-font-accent,  /* 0010 */
+.exo-hoverfont-accent:hover, /*0110 */
+.exo-children-font-accent a, .exo-children-font-accent label, .exo-children-font-accent p, /* 1010 */
+.exo-children-hoverfont-accent a:hover, .exo-children-hoverfont-accent label:hover, .exo-children-hoverfont-accent p:hover, /* 1110 */
+.exo-font-before-accent::before, /* 0011 */
+.exo-hoverfont-before-accent:hover::before, /* 0111 */
+.exo-children-font-before-accent a::before, .exo-children-font-before-accent label::before, .exo-children-font-before-accent p::before, /* 1011 */
+.exo-children-hoverfont-before-accent a:hover::before, .exo-children-hoverfont-before-accent label:hover::before, .exo-children-hoverfont-before-accent p:hover::before, /* 1111 */
+.exo-font-after-accent::after, /* 0012 */
+.exo-hoverfont-after-accent:hover::after, /* 0112 */
+.exo-children-font-after-accent a::after, .exo-children-font-after-accent label::after, .exo-children-font-after-accent p::after, /* 1012 */
+.exo-children-hoverfont-after-accent a:hover::after, .exo-children-hoverfont-after-accent label:hover::after, .exo-children-hoverfont-after-accent p:hover::after /* 1112 */  {
   color: #8AAAE5 !important;
 }
 
-.exo-background-accent, .exo-hoverbackground-accent:hover,
-.exo-children-background-accent a, .exo-children-background-accent label, .exo-children-background-accent p,
-.exo-children-hoverbackground-accent a:hover, .exo-children-hoverbackground-accent label:hover, .exo-children-hoverbackground-accent p:hover {
+.exo-background-accent, /* 0020 */
+.exo-hoverbackground-accent:hover, /* 0120 */
+.exo-children-background-accent a, .exo-children-background-accent label, .exo-children-background-accent p, /* 1020 */
+.exo-children-hoverbackground-accent a:hover, .exo-children-hoverbackground-accent label:hover, .exo-children-hoverbackground-accent p:hover, /* 1120 */
+.exo-background-before-accent::before, /* 0021 */ 
+.exo-hoverbackground-before-accent:hover::before, /* 0121 */
+.exo-children-background-before-accent a::before, .exo-children-background-before-accent label::before, .exo-children-background-before-accent p::before, /* 1021 */
+.exo-children-hoverbackground-before-accent a:hover::before, .exo-children-hoverbackground-before-accent label:hover::before, .exo-children-hoverbackground-before-accent p:hover::before, /* 1121 */
+.exo-background-after-accent::after, /* 0022 */
+.exo-hoverbackground-after-accent:hover::after, /* 0122 */
+.exo-children-background-after-accent a::after, .exo-children-background-after-accent label::after, .exo-children-background-after-accent p::after, /* 1022 */
+.exo-children-hoverbackground-after-accent a:hover::after, .exo-children-hoverbackground-after-accent label:hover::after, .exo-children-hoverbackground-after-accent p:hover::after { /* 1122 */
   background-color: #8AAAE5 !important;
 }
 
 
 
 
-/* black */
-.exo-font-black, .exo-hoverfont-black:hover,
-.exo-children-font-black a, .exo-children-font-black label, .exo-children-font-black p,
-.exo-children-hoverfont-black a:hover, .exo-children-hoverfont-black label:hover, .exo-children-hoverfont-black p:hover   {
+
+/* black #000000 */
+.exo-font-black,  /* 0010 */
+.exo-hoverfont-black:hover, /*0110 */
+.exo-children-font-black a, .exo-children-font-black label, .exo-children-font-black p, /* 1010 */
+.exo-children-hoverfont-black a:hover, .exo-children-hoverfont-black label:hover, .exo-children-hoverfont-black p:hover, /* 1110 */
+.exo-font-before-black::before, /* 0011 */
+.exo-hoverfont-before-black:hover::before, /* 0111 */
+.exo-children-font-before-black a::before, .exo-children-font-before-black label::before, .exo-children-font-before-black p::before, /* 1011 */
+.exo-children-hoverfont-before-black a:hover::before, .exo-children-hoverfont-before-black label:hover::before, .exo-children-hoverfont-before-black p:hover::before, /* 1111 */
+.exo-font-after-black::after, /* 0012 */
+.exo-hoverfont-after-black:hover::after, /* 0112 */
+.exo-children-font-after-black a::after, .exo-children-font-after-black label::after, .exo-children-font-after-black p::after, /* 1012 */
+.exo-children-hoverfont-after-black a:hover::after, .exo-children-hoverfont-after-black label:hover::after, .exo-children-hoverfont-after-black p:hover::after /* 1112 */  {
   color: #000000 !important;
 }
 
-.exo-background-black, .exo-hoverbackground-black:hover,
-.exo-children-background-black a, .exo-children-background-black label, .exo-children-background-black p,
-.exo-children-hoverbackground-black a:hover, .exo-children-hoverbackground-black label:hover, .exo-children-hoverbackground-black p:hover {
+.exo-background-black, /* 0020 */
+.exo-hoverbackground-black:hover, /* 0120 */
+.exo-children-background-black a, .exo-children-background-black label, .exo-children-background-black p, /* 1020 */
+.exo-children-hoverbackground-black a:hover, .exo-children-hoverbackground-black label:hover, .exo-children-hoverbackground-black p:hover, /* 1120 */
+.exo-background-before-black::before, /* 0021 */ 
+.exo-hoverbackground-before-black:hover::before, /* 0121 */
+.exo-children-background-before-black a::before, .exo-children-background-before-black label::before, .exo-children-background-before-black p::before, /* 1021 */
+.exo-children-hoverbackground-before-black a:hover::before, .exo-children-hoverbackground-before-black label:hover::before, .exo-children-hoverbackground-before-black p:hover::before, /* 1121 */
+.exo-background-after-black::after, /* 0022 */
+.exo-hoverbackground-after-black:hover::after, /* 0122 */
+.exo-children-background-after-black a::after, .exo-children-background-after-black label::after, .exo-children-background-after-black p::after, /* 1022 */
+.exo-children-hoverbackground-after-black a:hover::after, .exo-children-hoverbackground-after-black label:hover::after, .exo-children-hoverbackground-after-black p:hover::after { /* 1122 */
   background-color: #000000 !important;
 }
 
@@ -71,16 +127,35 @@ exo-[children-][hover](font|background)-<COLOR>
 
 
 
-/* white */
-.exo-font-white, .exo-hoverfont-white:hover,
-.exo-children-font-white a, .exo-children-font-white label, .exo-children-font-white p,
-.exo-children-hoverfont-white a:hover, .exo-children-hoverfont-white label:hover, .exo-children-hoverfont-white p:hover   {
+
+/* white #FFFFFF */
+.exo-font-white,  /* 0010 */
+.exo-hoverfont-white:hover, /*0110 */
+.exo-children-font-white a, .exo-children-font-white label, .exo-children-font-white p, /* 1010 */
+.exo-children-hoverfont-white a:hover, .exo-children-hoverfont-white label:hover, .exo-children-hoverfont-white p:hover, /* 1110 */
+.exo-font-before-white::before, /* 0011 */
+.exo-hoverfont-before-white:hover::before, /* 0111 */
+.exo-children-font-before-white a::before, .exo-children-font-before-white label::before, .exo-children-font-before-white p::before, /* 1011 */
+.exo-children-hoverfont-before-white a:hover::before, .exo-children-hoverfont-before-white label:hover::before, .exo-children-hoverfont-before-white p:hover::before, /* 1111 */
+.exo-font-after-white::after, /* 0012 */
+.exo-hoverfont-after-white:hover::after, /* 0112 */
+.exo-children-font-after-white a::after, .exo-children-font-after-white label::after, .exo-children-font-after-white p::after, /* 1012 */
+.exo-children-hoverfont-after-white a:hover::after, .exo-children-hoverfont-after-white label:hover::after, .exo-children-hoverfont-after-white p:hover::after /* 1112 */  {
   color: #FFFFFF !important;
 }
 
-.exo-background-white, .exo-hoverbackground-white:hover,
-.exo-children-background-white a, .exo-children-background-white label, .exo-children-background-white p,
-.exo-children-hoverbackground-white a:hover, .exo-children-hoverbackground-white label:hover, .exo-children-hoverbackground-white p:hover {
+.exo-background-white, /* 0020 */
+.exo-hoverbackground-white:hover, /* 0120 */
+.exo-children-background-white a, .exo-children-background-white label, .exo-children-background-white p, /* 1020 */
+.exo-children-hoverbackground-white a:hover, .exo-children-hoverbackground-white label:hover, .exo-children-hoverbackground-white p:hover, /* 1120 */
+.exo-background-before-white::before, /* 0021 */ 
+.exo-hoverbackground-before-white:hover::before, /* 0121 */
+.exo-children-background-before-white a::before, .exo-children-background-before-white label::before, .exo-children-background-before-white p::before, /* 1021 */
+.exo-children-hoverbackground-before-white a:hover::before, .exo-children-hoverbackground-before-white label:hover::before, .exo-children-hoverbackground-before-white p:hover::before, /* 1121 */
+.exo-background-after-white::after, /* 0022 */
+.exo-hoverbackground-after-white:hover::after, /* 0122 */
+.exo-children-background-after-white a::after, .exo-children-background-after-white label::after, .exo-children-background-after-white p::after, /* 1022 */
+.exo-children-hoverbackground-after-white a:hover::after, .exo-children-hoverbackground-after-white label:hover::after, .exo-children-hoverbackground-after-white p:hover::after { /* 1122 */
   background-color: #FFFFFF !important;
 }
 
@@ -88,30 +163,67 @@ exo-[children-][hover](font|background)-<COLOR>
 
 
 
-/* grey */
-.exo-font-grey, .exo-hoverfont-grey:hover,
-.exo-children-font-grey a, .exo-children-font-grey label, .exo-children-font-grey p,
-.exo-children-hoverfont-grey a:hover, .exo-children-hoverfont-grey label:hover, .exo-children-hoverfont-grey p:hover   {
+/* grey #212121 */
+.exo-font-grey,  /* 0010 */
+.exo-hoverfont-grey:hover, /*0110 */
+.exo-children-font-grey a, .exo-children-font-grey label, .exo-children-font-grey p, /* 1010 */
+.exo-children-hoverfont-grey a:hover, .exo-children-hoverfont-grey label:hover, .exo-children-hoverfont-grey p:hover, /* 1110 */
+.exo-font-before-grey::before, /* 0011 */
+.exo-hoverfont-before-grey:hover::before, /* 0111 */
+.exo-children-font-before-grey a::before, .exo-children-font-before-grey label::before, .exo-children-font-before-grey p::before, /* 1011 */
+.exo-children-hoverfont-before-grey a:hover::before, .exo-children-hoverfont-before-grey label:hover::before, .exo-children-hoverfont-before-grey p:hover::before, /* 1111 */
+.exo-font-after-grey::after, /* 0012 */
+.exo-hoverfont-after-grey:hover::after, /* 0112 */
+.exo-children-font-after-grey a::after, .exo-children-font-after-grey label::after, .exo-children-font-after-grey p::after, /* 1012 */
+.exo-children-hoverfont-after-grey a:hover::after, .exo-children-hoverfont-after-grey label:hover::after, .exo-children-hoverfont-after-grey p:hover::after /* 1112 */  {
   color: #212121 !important;
 }
 
-.exo-background-grey, .exo-hoverbackground-grey:hover,
-.exo-children-background-grey a, .exo-children-background-grey label, .exo-children-background-grey p,
-.exo-children-hoverbackground-grey a:hover, .exo-children-hoverbackground-grey label:hover, .exo-children-hoverbackground-grey p:hover {
+.exo-background-grey, /* 0020 */
+.exo-hoverbackground-grey:hover, /* 0120 */
+.exo-children-background-grey a, .exo-children-background-grey label, .exo-children-background-grey p, /* 1020 */
+.exo-children-hoverbackground-grey a:hover, .exo-children-hoverbackground-grey label:hover, .exo-children-hoverbackground-grey p:hover, /* 1120 */
+.exo-background-before-grey::before, /* 0021 */ 
+.exo-hoverbackground-before-grey:hover::before, /* 0121 */
+.exo-children-background-before-grey a::before, .exo-children-background-before-grey label::before, .exo-children-background-before-grey p::before, /* 1021 */
+.exo-children-hoverbackground-before-grey a:hover::before, .exo-children-hoverbackground-before-grey label:hover::before, .exo-children-hoverbackground-before-grey p:hover::before, /* 1121 */
+.exo-background-after-grey::after, /* 0022 */
+.exo-hoverbackground-after-grey:hover::after, /* 0122 */
+.exo-children-background-after-grey a::after, .exo-children-background-after-grey label::after, .exo-children-background-after-grey p::after, /* 1022 */
+.exo-children-hoverbackground-after-grey a:hover::after, .exo-children-hoverbackground-after-grey label:hover::after, .exo-children-hoverbackground-after-grey p:hover::after { /* 1122 */
   background-color: #212121 !important;
 }
 
 
 
-/* lightgrey */
-.exo-font-lightgrey, .exo-hoverfont-lightgrey:hover,
-.exo-children-font-lightgrey a, .exo-children-font-lightgrey label, .exo-children-font-lightgrey p,
-.exo-children-hoverfont-lightgrey a:hover, .exo-children-hoverfont-lightgrey label:hover, .exo-children-hoverfont-lightgrey p:hover   {
+
+/* lightgrey #f9f9f9 */
+.exo-font-lightgrey,  /* 0010 */
+.exo-hoverfont-lightgrey:hover, /*0110 */
+.exo-children-font-lightgrey a, .exo-children-font-lightgrey label, .exo-children-font-lightgrey p, /* 1010 */
+.exo-children-hoverfont-lightgrey a:hover, .exo-children-hoverfont-lightgrey label:hover, .exo-children-hoverfont-lightgrey p:hover, /* 1110 */
+.exo-font-before-lightgrey::before, /* 0011 */
+.exo-hoverfont-before-lightgrey:hover::before, /* 0111 */
+.exo-children-font-before-lightgrey a::before, .exo-children-font-before-lightgrey label::before, .exo-children-font-before-lightgrey p::before, /* 1011 */
+.exo-children-hoverfont-before-lightgrey a:hover::before, .exo-children-hoverfont-before-lightgrey label:hover::before, .exo-children-hoverfont-before-lightgrey p:hover::before, /* 1111 */
+.exo-font-after-lightgrey::after, /* 0012 */
+.exo-hoverfont-after-lightgrey:hover::after, /* 0112 */
+.exo-children-font-after-lightgrey a::after, .exo-children-font-after-lightgrey label::after, .exo-children-font-after-lightgrey p::after, /* 1012 */
+.exo-children-hoverfont-after-lightgrey a:hover::after, .exo-children-hoverfont-after-lightgrey label:hover::after, .exo-children-hoverfont-after-lightgrey p:hover::after /* 1112 */  {
   color: #f9f9f9 !important;
 }
 
-.exo-background-lightgrey, .exo-hoverbackground-lightgrey:hover,
-.exo-children-background-lightgrey a, .exo-children-background-lightgrey label, .exo-children-background-lightgrey p,
-.exo-children-hoverbackground-lightgrey a:hover, .exo-children-hoverbackground-lightgrey label:hover, .exo-children-hoverbackground-lightgrey p:hover {
+.exo-background-lightgrey, /* 0020 */
+.exo-hoverbackground-lightgrey:hover, /* 0120 */
+.exo-children-background-lightgrey a, .exo-children-background-lightgrey label, .exo-children-background-lightgrey p, /* 1020 */
+.exo-children-hoverbackground-lightgrey a:hover, .exo-children-hoverbackground-lightgrey label:hover, .exo-children-hoverbackground-lightgrey p:hover, /* 1120 */
+.exo-background-before-lightgrey::before, /* 0021 */ 
+.exo-hoverbackground-before-lightgrey:hover::before, /* 0121 */
+.exo-children-background-before-lightgrey a::before, .exo-children-background-before-lightgrey label::before, .exo-children-background-before-lightgrey p::before, /* 1021 */
+.exo-children-hoverbackground-before-lightgrey a:hover::before, .exo-children-hoverbackground-before-lightgrey label:hover::before, .exo-children-hoverbackground-before-lightgrey p:hover::before, /* 1121 */
+.exo-background-after-lightgrey::after, /* 0022 */
+.exo-hoverbackground-after-lightgrey:hover::after, /* 0122 */
+.exo-children-background-after-lightgrey a::after, .exo-children-background-after-lightgrey label::after, .exo-children-background-after-lightgrey p::after, /* 1022 */
+.exo-children-hoverbackground-after-lightgrey a:hover::after, .exo-children-hoverbackground-after-lightgrey label:hover::after, .exo-children-hoverbackground-after-lightgrey p:hover::after { /* 1122 */
   background-color: #f9f9f9 !important;
 }
