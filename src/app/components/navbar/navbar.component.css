@@ -13,3 +13,7 @@ ul li a {
     max-height: 40px;
     object-fit: contain;
 }
+
+.spacer {
+    padding-bottom: 66px;
+}
