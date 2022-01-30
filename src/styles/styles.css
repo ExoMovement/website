@@ -1,0 +1,29 @@
+/* Ensure the page takes up the entire page and has no horizontal scrollbars */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+/* Show underline animation on hover. Too far/close to the text? Check the element's padding/margins */
+.exo-underhover {
+  position: relative;
+}
+.exo-underhover::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 90%;
+  height: 2px;
+  bottom: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.exo-underhover:hover::before {
+  transform: scaleX(1);
+}
+/* Extend the on-hover to always shown */
+.exo-underhover-always::before {
+    transform: scaleX(1);
+}
