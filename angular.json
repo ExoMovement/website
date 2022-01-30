@@ -32,8 +32,9 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css",
-              "src/styles-color-palette.css"
+              "src/styles/styles.css",
+              "src/styles/styles-color-palette.css",
+              "src/styles/styles-color-palette-override.css"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",  

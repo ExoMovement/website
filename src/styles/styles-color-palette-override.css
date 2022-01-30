@@ -1,0 +1,214 @@
+/* Colors to be used throughout the website.
+
+This is an extension of the styles-color-pallete css file
+
+add the .exo-override class and change the desired class to .exo-override-(additional options)-<COLOR> to override the color
+*/
+
+
+
+/* primary #0035E2 */
+.exo-override.exo-override-font-primary,  /* 0010 */
+.exo-override.exo-override-hoverfont-primary:hover, /*0110 */
+.exo-override-children-font-primary a.exo-override, .exo-override-children-font-primary label.exo-override, .exo-override-children-font-primary p.exo-override, /* 1010 */
+.exo-override-children-hoverfont-primary a.exo-override:hover, .exo-override-children-hoverfont-primary label.exo-override:hover, .exo-override-children-hoverfont-primary p.exo-override:hover, /* 1110 */
+.exo-override.exo-override-font-before-primary::before, /* 0011 */
+.exo-override.exo-override-hoverfont-before-primary:hover::before, /* 0111 */
+.exo-override-children-font-before-primary a.exo-override::before, .exo-override-children-font-before-primary label.exo-override::before, .exo-override-children-font-before-primary p.exo-override::before, /* 1011 */
+.exo-override-children-hoverfont-before-primary a.exo-override:hover::before, .exo-override-children-hoverfont-before-primary label.exo-override:hover::before, .exo-override-children-hoverfont-before-primary p.exo-override:hover::before, /* 1111 */
+.exo-override.exo-override-font-after-primary::after, /* 0012 */
+.exo-override.exo-override-hoverfont-after-primary:hover::after, /* 0112 */
+.exo-override-children-font-after-primary a.exo-override::after, .exo-override-children-font-after-primary label.exo-override::after, .exo-override-children-font-after-primary p.exo-override::after, /* 1012 */
+.exo-override-children-hoverfont-after-primary a.exo-override:hover::after, .exo-override-children-hoverfont-after-primary label.exo-override:hover::after, .exo-override-children-hoverfont-after-primary p.exo-override:hover::after /* 1112 */  {
+  color: #0035E2 !important;
+}
+
+.exo-override.exo-override-background-primary, /* 0020 */
+.exo-override.exo-override-hoverbackground-primary:hover, /* 0120 */
+.exo-override-children-background-primary a.exo-override, .exo-override-children-background-primary label.exo-override, .exo-override-children-background-primary p.exo-override, /* 1020 */
+.exo-override-children-hoverbackground-primary a.exo-override:hover, .exo-override-children-hoverbackground-primary label.exo-override:hover, .exo-override-children-hoverbackground-primary p.exo-override:hover, /* 1120 */
+.exo-override.exo-override-background-before-primary::before, /* 0021 */ 
+.exo-override.exo-override-hoverbackground-before-primary:hover::before, /* 0121 */
+.exo-override-children-background-before-primary a.exo-override::before, .exo-override-children-background-before-primary label.exo-override::before, .exo-override-children-background-before-primary p.exo-override::before, /* 1021 */
+.exo-override-children-hoverbackground-before-primary a.exo-override:hover::before, .exo-override-children-hoverbackground-before-primary label.exo-override:hover::before, .exo-override-children-hoverbackground-before-primary p.exo-override:hover::before, /* 1121 */
+.exo-override.exo-override-background-after-primary::after, /* 0022 */
+.exo-override.exo-override-hoverbackground-after-primary:hover::after, /* 0122 */
+.exo-override-children-background-after-primary a.exo-override::after, .exo-override-children-background-after-primary label.exo-override::after, .exo-override-children-background-after-primary p.exo-override::after, /* 1022 */
+.exo-override-children-hoverbackground-after-primary a.exo-override:hover::after, .exo-override-children-hoverbackground-after-primary label.exo-override:hover::after, .exo-override-children-hoverbackground-after-primary p.exo-override:hover::after { /* 1122 */
+  background-color: #0035E2 !important;
+}
+
+
+
+
+
+/* accent #8AAAE5 */
+.exo-override.exo-override-font-accent,  /* 0010 */
+.exo-override.exo-override-hoverfont-accent:hover, /*0110 */
+.exo-override-children-font-accent a.exo-override, .exo-override-children-font-accent label.exo-override, .exo-override-children-font-accent p.exo-override, /* 1010 */
+.exo-override-children-hoverfont-accent a.exo-override:hover, .exo-override-children-hoverfont-accent label.exo-override:hover, .exo-override-children-hoverfont-accent p.exo-override:hover, /* 1110 */
+.exo-override.exo-override-font-before-accent::before, /* 0011 */
+.exo-override.exo-override-hoverfont-before-accent:hover::before, /* 0111 */
+.exo-override-children-font-before-accent a.exo-override::before, .exo-override-children-font-before-accent label.exo-override::before, .exo-override-children-font-before-accent p.exo-override::before, /* 1011 */
+.exo-override-children-hoverfont-before-accent a.exo-override:hover::before, .exo-override-children-hoverfont-before-accent label.exo-override:hover::before, .exo-override-children-hoverfont-before-accent p.exo-override:hover::before, /* 1111 */
+.exo-override.exo-override-font-after-accent::after, /* 0012 */
+.exo-override.exo-override-hoverfont-after-accent:hover::after, /* 0112 */
+.exo-override-children-font-after-accent a.exo-override::after, .exo-override-children-font-after-accent label.exo-override::after, .exo-override-children-font-after-accent p.exo-override::after, /* 1012 */
+.exo-override-children-hoverfont-after-accent a.exo-override:hover::after, .exo-override-children-hoverfont-after-accent label.exo-override:hover::after, .exo-override-children-hoverfont-after-accent p.exo-override:hover::after /* 1112 */  {
+  color: #8AAAE5 !important;
+}
+
+.exo-override.exo-override-background-accent, /* 0020 */
+.exo-override.exo-override-hoverbackground-accent:hover, /* 0120 */
+.exo-override-children-background-accent a.exo-override, .exo-override-children-background-accent label.exo-override, .exo-override-children-background-accent p.exo-override, /* 1020 */
+.exo-override-children-hoverbackground-accent a.exo-override:hover, .exo-override-children-hoverbackground-accent label.exo-override:hover, .exo-override-children-hoverbackground-accent p.exo-override:hover, /* 1120 */
+.exo-override.exo-override-background-before-accent::before, /* 0021 */ 
+.exo-override.exo-override-hoverbackground-before-accent:hover::before, /* 0121 */
+.exo-override-children-background-before-accent a.exo-override::before, .exo-override-children-background-before-accent label.exo-override::before, .exo-override-children-background-before-accent p.exo-override::before, /* 1021 */
+.exo-override-children-hoverbackground-before-accent a.exo-override:hover::before, .exo-override-children-hoverbackground-before-accent label.exo-override:hover::before, .exo-override-children-hoverbackground-before-accent p.exo-override:hover::before, /* 1121 */
+.exo-override.exo-override-background-after-accent::after, /* 0022 */
+.exo-override.exo-override-hoverbackground-after-accent:hover::after, /* 0122 */
+.exo-override-children-background-after-accent a.exo-override::after, .exo-override-children-background-after-accent label.exo-override::after, .exo-override-children-background-after-accent p.exo-override::after, /* 1022 */
+.exo-override-children-hoverbackground-after-accent a.exo-override:hover::after, .exo-override-children-hoverbackground-after-accent label.exo-override:hover::after, .exo-override-children-hoverbackground-after-accent p.exo-override:hover::after { /* 1122 */
+  background-color: #8AAAE5 !important;
+}
+
+
+
+
+
+/* black #000000 */
+.exo-override.exo-override-font-black,  /* 0010 */
+.exo-override.exo-override-hoverfont-black:hover, /*0110 */
+.exo-override-children-font-black a.exo-override, .exo-override-children-font-black label.exo-override, .exo-override-children-font-black p.exo-override, /* 1010 */
+.exo-override-children-hoverfont-black a.exo-override:hover, .exo-override-children-hoverfont-black label.exo-override:hover, .exo-override-children-hoverfont-black p.exo-override:hover, /* 1110 */
+.exo-override.exo-override-font-before-black::before, /* 0011 */
+.exo-override.exo-override-hoverfont-before-black:hover::before, /* 0111 */
+.exo-override-children-font-before-black a.exo-override::before, .exo-override-children-font-before-black label.exo-override::before, .exo-override-children-font-before-black p.exo-override::before, /* 1011 */
+.exo-override-children-hoverfont-before-black a.exo-override:hover::before, .exo-override-children-hoverfont-before-black label.exo-override:hover::before, .exo-override-children-hoverfont-before-black p.exo-override:hover::before, /* 1111 */
+.exo-override.exo-override-font-after-black::after, /* 0012 */
+.exo-override.exo-override-hoverfont-after-black:hover::after, /* 0112 */
+.exo-override-children-font-after-black a.exo-override::after, .exo-override-children-font-after-black label.exo-override::after, .exo-override-children-font-after-black p.exo-override::after, /* 1012 */
+.exo-override-children-hoverfont-after-black a.exo-override:hover::after, .exo-override-children-hoverfont-after-black label.exo-override:hover::after, .exo-override-children-hoverfont-after-black p.exo-override:hover::after /* 1112 */  {
+  color: #000000 !important;
+}
+
+.exo-override.exo-override-background-black, /* 0020 */
+.exo-override.exo-override-hoverbackground-black:hover, /* 0120 */
+.exo-override-children-background-black a.exo-override, .exo-override-children-background-black label.exo-override, .exo-override-children-background-black p.exo-override, /* 1020 */
+.exo-override-children-hoverbackground-black a.exo-override:hover, .exo-override-children-hoverbackground-black label.exo-override:hover, .exo-override-children-hoverbackground-black p.exo-override:hover, /* 1120 */
+.exo-override.exo-override-background-before-black::before, /* 0021 */ 
+.exo-override.exo-override-hoverbackground-before-black:hover::before, /* 0121 */
+.exo-override-children-background-before-black a.exo-override::before, .exo-override-children-background-before-black label.exo-override::before, .exo-override-children-background-before-black p.exo-override::before, /* 1021 */
+.exo-override-children-hoverbackground-before-black a.exo-override:hover::before, .exo-override-children-hoverbackground-before-black label.exo-override:hover::before, .exo-override-children-hoverbackground-before-black p.exo-override:hover::before, /* 1121 */
+.exo-override.exo-override-background-after-black::after, /* 0022 */
+.exo-override.exo-override-hoverbackground-after-black:hover::after, /* 0122 */
+.exo-override-children-background-after-black a.exo-override::after, .exo-override-children-background-after-black label.exo-override::after, .exo-override-children-background-after-black p.exo-override::after, /* 1022 */
+.exo-override-children-hoverbackground-after-black a.exo-override:hover::after, .exo-override-children-hoverbackground-after-black label.exo-override:hover::after, .exo-override-children-hoverbackground-after-black p.exo-override:hover::after { /* 1122 */
+  background-color: #000000 !important;
+}
+
+
+
+
+
+
+/* white #FFFFFF */
+.exo-override.exo-override-font-white,  /* 0010 */
+.exo-override.exo-override-hoverfont-white:hover, /*0110 */
+.exo-override-children-font-white a.exo-override, .exo-override-children-font-white label.exo-override, .exo-override-children-font-white p.exo-override, /* 1010 */
+.exo-override-children-hoverfont-white a.exo-override:hover, .exo-override-children-hoverfont-white label.exo-override:hover, .exo-override-children-hoverfont-white p.exo-override:hover, /* 1110 */
+.exo-override.exo-override-font-before-white::before, /* 0011 */
+.exo-override.exo-override-hoverfont-before-white:hover::before, /* 0111 */
+.exo-override-children-font-before-white a.exo-override::before, .exo-override-children-font-before-white label.exo-override::before, .exo-override-children-font-before-white p.exo-override::before, /* 1011 */
+.exo-override-children-hoverfont-before-white a.exo-override:hover::before, .exo-override-children-hoverfont-before-white label.exo-override:hover::before, .exo-override-children-hoverfont-before-white p.exo-override:hover::before, /* 1111 */
+.exo-override.exo-override-font-after-white::after, /* 0012 */
+.exo-override.exo-override-hoverfont-after-white:hover::after, /* 0112 */
+.exo-override-children-font-after-white a.exo-override::after, .exo-override-children-font-after-white label.exo-override::after, .exo-override-children-font-after-white p.exo-override::after, /* 1012 */
+.exo-override-children-hoverfont-after-white a.exo-override:hover::after, .exo-override-children-hoverfont-after-white label.exo-override:hover::after, .exo-override-children-hoverfont-after-white p.exo-override:hover::after /* 1112 */  {
+  color: #FFFFFF !important;
+}
+
+.exo-override.exo-override-background-white, /* 0020 */
+.exo-override.exo-override-hoverbackground-white:hover, /* 0120 */
+.exo-override-children-background-white a.exo-override, .exo-override-children-background-white label.exo-override, .exo-override-children-background-white p.exo-override, /* 1020 */
+.exo-override-children-hoverbackground-white a.exo-override:hover, .exo-override-children-hoverbackground-white label.exo-override:hover, .exo-override-children-hoverbackground-white p.exo-override:hover, /* 1120 */
+.exo-override.exo-override-background-before-white::before, /* 0021 */ 
+.exo-override.exo-override-hoverbackground-before-white:hover::before, /* 0121 */
+.exo-override-children-background-before-white a.exo-override::before, .exo-override-children-background-before-white label.exo-override::before, .exo-override-children-background-before-white p.exo-override::before, /* 1021 */
+.exo-override-children-hoverbackground-before-white a.exo-override:hover::before, .exo-override-children-hoverbackground-before-white label.exo-override:hover::before, .exo-override-children-hoverbackground-before-white p.exo-override:hover::before, /* 1121 */
+.exo-override.exo-override-background-after-white::after, /* 0022 */
+.exo-override.exo-override-hoverbackground-after-white:hover::after, /* 0122 */
+.exo-override-children-background-after-white a.exo-override::after, .exo-override-children-background-after-white label.exo-override::after, .exo-override-children-background-after-white p.exo-override::after, /* 1022 */
+.exo-override-children-hoverbackground-after-white a.exo-override:hover::after, .exo-override-children-hoverbackground-after-white label.exo-override:hover::after, .exo-override-children-hoverbackground-after-white p.exo-override:hover::after { /* 1122 */
+  background-color: #FFFFFF !important;
+}
+
+
+
+
+
+/* grey #212121 */
+.exo-override.exo-override-font-grey,  /* 0010 */
+.exo-override.exo-override-hoverfont-grey:hover, /*0110 */
+.exo-override-children-font-grey a.exo-override, .exo-override-children-font-grey label.exo-override, .exo-override-children-font-grey p.exo-override, /* 1010 */
+.exo-override-children-hoverfont-grey a.exo-override:hover, .exo-override-children-hoverfont-grey label.exo-override:hover, .exo-override-children-hoverfont-grey p.exo-override:hover, /* 1110 */
+.exo-override.exo-override-font-before-grey::before, /* 0011 */
+.exo-override.exo-override-hoverfont-before-grey:hover::before, /* 0111 */
+.exo-override-children-font-before-grey a.exo-override::before, .exo-override-children-font-before-grey label.exo-override::before, .exo-override-children-font-before-grey p.exo-override::before, /* 1011 */
+.exo-override-children-hoverfont-before-grey a.exo-override:hover::before, .exo-override-children-hoverfont-before-grey label.exo-override:hover::before, .exo-override-children-hoverfont-before-grey p.exo-override:hover::before, /* 1111 */
+.exo-override.exo-override-font-after-grey::after, /* 0012 */
+.exo-override.exo-override-hoverfont-after-grey:hover::after, /* 0112 */
+.exo-override-children-font-after-grey a.exo-override::after, .exo-override-children-font-after-grey label.exo-override::after, .exo-override-children-font-after-grey p.exo-override::after, /* 1012 */
+.exo-override-children-hoverfont-after-grey a.exo-override:hover::after, .exo-override-children-hoverfont-after-grey label.exo-override:hover::after, .exo-override-children-hoverfont-after-grey p.exo-override:hover::after /* 1112 */  {
+  color: #212121 !important;
+}
+
+.exo-override.exo-override-background-grey, /* 0020 */
+.exo-override.exo-override-hoverbackground-grey:hover, /* 0120 */
+.exo-override-children-background-grey a.exo-override, .exo-override-children-background-grey label.exo-override, .exo-override-children-background-grey p.exo-override, /* 1020 */
+.exo-override-children-hoverbackground-grey a.exo-override:hover, .exo-override-children-hoverbackground-grey label.exo-override:hover, .exo-override-children-hoverbackground-grey p.exo-override:hover, /* 1120 */
+.exo-override.exo-override-background-before-grey::before, /* 0021 */ 
+.exo-override.exo-override-hoverbackground-before-grey:hover::before, /* 0121 */
+.exo-override-children-background-before-grey a.exo-override::before, .exo-override-children-background-before-grey label.exo-override::before, .exo-override-children-background-before-grey p.exo-override::before, /* 1021 */
+.exo-override-children-hoverbackground-before-grey a.exo-override:hover::before, .exo-override-children-hoverbackground-before-grey label.exo-override:hover::before, .exo-override-children-hoverbackground-before-grey p.exo-override:hover::before, /* 1121 */
+.exo-override.exo-override-background-after-grey::after, /* 0022 */
+.exo-override.exo-override-hoverbackground-after-grey:hover::after, /* 0122 */
+.exo-override-children-background-after-grey a.exo-override::after, .exo-override-children-background-after-grey label.exo-override::after, .exo-override-children-background-after-grey p.exo-override::after, /* 1022 */
+.exo-override-children-hoverbackground-after-grey a.exo-override:hover::after, .exo-override-children-hoverbackground-after-grey label.exo-override:hover::after, .exo-override-children-hoverbackground-after-grey p.exo-override:hover::after { /* 1122 */
+  background-color: #212121 !important;
+}
+
+
+
+
+/* lightgrey #f9f9f9 */
+.exo-override.exo-override-font-lightgrey,  /* 0010 */
+.exo-override.exo-override-hoverfont-lightgrey:hover, /*0110 */
+.exo-override-children-font-lightgrey a.exo-override, .exo-override-children-font-lightgrey label.exo-override, .exo-override-children-font-lightgrey p.exo-override, /* 1010 */
+.exo-override-children-hoverfont-lightgrey a.exo-override:hover, .exo-override-children-hoverfont-lightgrey label.exo-override:hover, .exo-override-children-hoverfont-lightgrey p.exo-override:hover, /* 1110 */
+.exo-override.exo-override-font-before-lightgrey::before, /* 0011 */
+.exo-override.exo-override-hoverfont-before-lightgrey:hover::before, /* 0111 */
+.exo-override-children-font-before-lightgrey a.exo-override::before, .exo-override-children-font-before-lightgrey label.exo-override::before, .exo-override-children-font-before-lightgrey p.exo-override::before, /* 1011 */
+.exo-override-children-hoverfont-before-lightgrey a.exo-override:hover::before, .exo-override-children-hoverfont-before-lightgrey label.exo-override:hover::before, .exo-override-children-hoverfont-before-lightgrey p.exo-override:hover::before, /* 1111 */
+.exo-override.exo-override-font-after-lightgrey::after, /* 0012 */
+.exo-override.exo-override-hoverfont-after-lightgrey:hover::after, /* 0112 */
+.exo-override-children-font-after-lightgrey a.exo-override::after, .exo-override-children-font-after-lightgrey label.exo-override::after, .exo-override-children-font-after-lightgrey p.exo-override::after, /* 1012 */
+.exo-override-children-hoverfont-after-lightgrey a.exo-override:hover::after, .exo-override-children-hoverfont-after-lightgrey label.exo-override:hover::after, .exo-override-children-hoverfont-after-lightgrey p.exo-override:hover::after /* 1112 */  {
+  color: #f9f9f9 !important;
+}
+
+.exo-override.exo-override-background-lightgrey, /* 0020 */
+.exo-override.exo-override-hoverbackground-lightgrey:hover, /* 0120 */
+.exo-override-children-background-lightgrey a.exo-override, .exo-override-children-background-lightgrey label.exo-override, .exo-override-children-background-lightgrey p.exo-override, /* 1020 */
+.exo-override-children-hoverbackground-lightgrey a.exo-override:hover, .exo-override-children-hoverbackground-lightgrey label.exo-override:hover, .exo-override-children-hoverbackground-lightgrey p.exo-override:hover, /* 1120 */
+.exo-override.exo-override-background-before-lightgrey::before, /* 0021 */ 
+.exo-override.exo-override-hoverbackground-before-lightgrey:hover::before, /* 0121 */
+.exo-override-children-background-before-lightgrey a.exo-override::before, .exo-override-children-background-before-lightgrey label.exo-override::before, .exo-override-children-background-before-lightgrey p.exo-override::before, /* 1021 */
+.exo-override-children-hoverbackground-before-lightgrey a.exo-override:hover::before, .exo-override-children-hoverbackground-before-lightgrey label.exo-override:hover::before, .exo-override-children-hoverbackground-before-lightgrey p.exo-override:hover::before, /* 1121 */
+.exo-override.exo-override-background-after-lightgrey::after, /* 0022 */
+.exo-override.exo-override-hoverbackground-after-lightgrey:hover::after, /* 0122 */
+.exo-override-children-background-after-lightgrey a.exo-override::after, .exo-override-children-background-after-lightgrey label.exo-override::after, .exo-override-children-background-after-lightgrey p.exo-override::after, /* 1022 */
+.exo-override-children-hoverbackground-after-lightgrey a.exo-override:hover::after, .exo-override-children-hoverbackground-after-lightgrey label.exo-override:hover::after, .exo-override-children-hoverbackground-after-lightgrey p.exo-override:hover::after { /* 1122 */
+  background-color: #f9f9f9 !important;
+}

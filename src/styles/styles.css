@@ -23,3 +23,7 @@ html, body {
 .exo-underhover:hover::before {
   transform: scaleX(1);
 }
+/* Extend the on-hover to always shown */
+.exo-underhover-always::before {
+    transform: scaleX(1);
+}

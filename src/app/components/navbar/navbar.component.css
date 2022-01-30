@@ -6,25 +6,10 @@ ul li a {
     padding-right: 10px;
     padding-left: 10px;
     text-align: center;
-    list-style:none; 
+    list-style: none; 
 } 
 .navbar-brand img {
     max-width: 100%;
     max-height: 40px;
     object-fit: contain;
-}
-.exo-active-link{
-    color: #8AAAE5 !important;
-  }
-.exo-active-link::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 90%;
-    height: 2px;
-    bottom: 0;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    transform: scaleX(1);
 }
