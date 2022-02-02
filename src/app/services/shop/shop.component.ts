@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {NavBarType } from "../../components/navbar/NavBarEnums"
+import { ActivatedRoute } from '@angular/router';
+import {NavigationType } from "../../components/NavigationEnums"
 
 @Component({
   selector: 'app-shop',
@@ -7,12 +8,10 @@ import {NavBarType } from "../../components/navbar/NavBarEnums"
   styleUrls: ['./shop.component.css']
 })
 export class ShopComponent implements OnInit {
-  public get NavBarType(): typeof NavBarType {
-    return NavBarType; 
-  }
-  constructor() { }
-
+  public navigationType!: NavigationType;
+  constructor(private _route: ActivatedRoute) { }
   ngOnInit(): void {
+    this._route.data
+      .subscribe(routeData => this.navigationType = routeData['navigationType']);
   }
-
 }

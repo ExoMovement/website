@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { FooterComponent } from '../../components/footer/footer.component';
-import { NavbarComponent } from '../../components/navbar/navbar.component';
+import { FooterComponent } from 'src/app/components/footer/footer.component';
+import { NavbarComponent } from 'src/app/components/navbar/navbar.component';
 
-import { ContactComponent } from './contact.component';
+import { ResearchComponent } from './research.component';
 
-describe('ContactComponent', () => {
-  let component: ContactComponent;
-  let fixture: ComponentFixture<ContactComponent>;
+describe('ResearchComponent', () => {
+  let component: ResearchComponent;
+  let fixture: ComponentFixture<ResearchComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ContactComponent, NavbarComponent, FooterComponent ],
+      declarations: [ ResearchComponent, NavbarComponent, FooterComponent ],
       imports: [
         RouterTestingModule.withRoutes([])
       ],
@@ -20,7 +20,7 @@ describe('ContactComponent', () => {
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ContactComponent);
+    fixture = TestBed.createComponent(ResearchComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

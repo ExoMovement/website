@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
+import { RouterTestingModule } from "@angular/router/testing";
 
 import { ShopComponent } from './shop.component';
 
@@ -10,7 +11,10 @@ describe('ShopComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ShopComponent, NavbarComponent, FooterComponent ]
+      declarations: [ ShopComponent, NavbarComponent, FooterComponent ],
+      imports: [
+        RouterTestingModule.withRoutes([])
+      ],
     })
     .compileComponents();
   });

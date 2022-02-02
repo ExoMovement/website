@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {NavigationType } from "../../components/NavigationEnums"
+import { NavigationType } from 'src/app/components/NavigationEnums';
 
 @Component({
-  selector: 'app-privacy-policy',
-  templateUrl: './privacy-policy.component.html',
-  styleUrls: ['./privacy-policy.component.css']
+  selector: 'app-research',
+  templateUrl: './research.component.html',
+  styleUrls: ['./research.component.css']
 })
-export class PrivacyPolicyComponent implements OnInit {
+export class ResearchComponent implements OnInit {
   public navigationType!: NavigationType;
   constructor(private _route: ActivatedRoute) { }
   ngOnInit(): void {

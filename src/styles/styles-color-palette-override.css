@@ -2,6 +2,14 @@
 
 This is an extension of the styles-color-pallete css file
 
+Therefore, when overriding, use:
+  exo-override-[children-][hover](font|background)-[(before|after)-]<COLOR>
+along with:
+  exo-override
+on the element.
+
+The only time the color class and the exo-override are on a different element is when you are using 'children'
+
 add the .exo-override class and change the desired class to .exo-override-(additional options)-<COLOR> to override the color
 */
 

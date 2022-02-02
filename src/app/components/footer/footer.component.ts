@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { NavigationType } from '../NavigationEnums';
 
 @Component({
   selector: 'app-footer',
@@ -6,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-
+  @Input() type: NavigationType = NavigationType.Home;
+  public get NavBarType(): typeof NavigationType {
+    return NavigationType; 
+  }
+  
   constructor() { }
 
   ngOnInit(): void {

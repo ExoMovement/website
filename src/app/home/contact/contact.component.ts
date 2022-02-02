@@ -1,17 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import {NavBarType } from "../../components/navbar/NavBarEnums"
+import { ActivatedRoute } from '@angular/router';
+import {NavigationType } from "../../components/NavigationEnums"
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  public get NavBarType(): typeof NavBarType {
-    return NavBarType; 
-  }
-  constructor() { }
-
+  public navigationType!: NavigationType;
+  constructor(private _route: ActivatedRoute) { }
   ngOnInit(): void {
+    this._route.data
+      .subscribe(routeData => this.navigationType = routeData['navigationType']);
   }
-
 }

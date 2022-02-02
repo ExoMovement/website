@@ -27,3 +27,9 @@ html, body {
 .exo-underhover-always::before {
     transform: scaleX(1);
 }
+
+
+h2 {
+  
+  font-weight: 350;
+}
