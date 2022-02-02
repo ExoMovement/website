@@ -12,7 +12,9 @@ import { PrivacyPolicyComponent } from './home/privacy-policy/privacy-policy.com
 import { RefundReturnPolicyComponent } from './home/refund-return-policy/refund-return-policy.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { OurProjectsComponent } from './research/our-projects/our-projects.component';
-import { ServiceProjectsComponent } from './services/service-projects/service-projects.component';
+import { ServicesComponent } from './services/services/services.component';
+import { ResearchComponent } from './research/research/research.component';
+import { PrototypesComponent } from './services/prototypes/prototypes.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { ServiceProjectsComponent } from './services/service-projects/service-pr
     PrivacyPolicyComponent,
     RefundReturnPolicyComponent,
     OurProjectsComponent,
-    ServiceProjectsComponent
+    ServicesComponent,
+    ResearchComponent,
+    PrototypesComponent
   ],
   imports: [
     BrowserModule,

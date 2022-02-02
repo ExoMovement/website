@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import {NavBarType } from "../../components/navbar/NavBarEnums"
 
 @Component({
@@ -7,12 +8,10 @@ import {NavBarType } from "../../components/navbar/NavBarEnums"
   styleUrls: ['./privacy-policy.component.css']
 })
 export class PrivacyPolicyComponent implements OnInit {
-  public get NavBarType(): typeof NavBarType {
-    return NavBarType; 
-  }
-  constructor() { }
-
+  public navigationType!: NavBarType;
+  constructor(private _route: ActivatedRoute) { }
   ngOnInit(): void {
+    this._route.data
+      .subscribe(routeData => this.navigationType = routeData['navigationType']);
   }
-
 }
