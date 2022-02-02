@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 
@@ -10,7 +11,10 @@ describe('ContactComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ContactComponent, NavbarComponent, FooterComponent ]
+      declarations: [ ContactComponent, NavbarComponent, FooterComponent ],
+      imports: [
+        RouterTestingModule.withRoutes([])
+      ],
     })
     .compileComponents();
   });
