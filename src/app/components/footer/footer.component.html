@@ -1,11 +1,16 @@
 <footer class="exo-background-grey exo-children-font-white exo-children-hoverfont-accent">
-    <a routerLink="">Home</a>
+    <a routerLink="/Research">Research</a>
     &nbsp;
-    <a routerLink="Research/Contact">Contact</a>
+    <a routerLink="/Services">Services</a>
     &nbsp;
-    <a routerLink="Services/Shop">Shop</a>
+    <a *ngIf="type === NavBarType.Research" routerLink="/Research/Contact">Contact</a>
+    <a *ngIf="type === NavBarType.Services" routerLink="/Services/Contact">Contact</a>
     &nbsp;
-    <a routerLink="Research/Privacy-Policy">Privacy Policy</a>
+    <a routerLink="/Services/Shop">Shop</a>
     &nbsp;
-    <a routerLink="Research/Refund-Return-Policy">Refund Return Policy</a>
+    <a *ngIf="type === NavBarType.Research" routerLink="/Research/Privacy-Policy">Privacy Policy</a>
+    <a *ngIf="type === NavBarType.Services" routerLink="/Services/Privacy-Policy">Privacy Policy</a>
+    &nbsp;
+    <a *ngIf="type === NavBarType.Research" routerLink="/Research/Refund-Return-Policy">Refund Return Policy</a>
+    <a *ngIf="type === NavBarType.Services" routerLink="/Services/Refund-Return-Policy">Refund Return Policy</a>
 </footer>

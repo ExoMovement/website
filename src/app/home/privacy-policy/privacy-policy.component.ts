@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {NavBarType } from "../../components/navbar/NavBarEnums"
+import {NavigationType } from "../../components/NavigationEnums"
 
 @Component({
   selector: 'app-privacy-policy',
@@ -8,7 +8,7 @@ import {NavBarType } from "../../components/navbar/NavBarEnums"
   styleUrls: ['./privacy-policy.component.css']
 })
 export class PrivacyPolicyComponent implements OnInit {
-  public navigationType!: NavBarType;
+  public navigationType!: NavigationType;
   constructor(private _route: ActivatedRoute) { }
   ngOnInit(): void {
     this._route.data

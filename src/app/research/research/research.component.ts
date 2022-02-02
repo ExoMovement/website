@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { NavBarType } from 'src/app/components/navbar/NavBarEnums';
+import { NavigationType } from 'src/app/components/NavigationEnums';
 
 @Component({
   selector: 'app-research',
@@ -8,7 +8,7 @@ import { NavBarType } from 'src/app/components/navbar/NavBarEnums';
   styleUrls: ['./research.component.css']
 })
 export class ResearchComponent implements OnInit {
-  public navigationType!: NavBarType;
+  public navigationType!: NavigationType;
   constructor(private _route: ActivatedRoute) { }
   ngOnInit(): void {
     this._route.data

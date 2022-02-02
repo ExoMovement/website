@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import {NavBarType } from "./NavBarEnums"
+import {NavigationType } from "../NavigationEnums"
 
 @Component({
   selector: 'app-navbar',
@@ -7,11 +7,10 @@ import {NavBarType } from "./NavBarEnums"
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  @Input() type: NavBarType = NavBarType.Home;
-  public get NavBarType(): typeof NavBarType {
-    return NavBarType; 
+  @Input() type: NavigationType = NavigationType.Home;
+  public get NavBarType(): typeof NavigationType {
+    return NavigationType; 
   }
-  active = 1;
 
   constructor() { }
 

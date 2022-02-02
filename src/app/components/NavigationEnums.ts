@@ -1,4 +1,4 @@
-export enum NavBarType {
+export enum NavigationType {
     Home,
     Research,
     Services    
