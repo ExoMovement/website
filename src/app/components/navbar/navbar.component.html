@@ -25,6 +25,11 @@
               routerLinkActive="exo-underhover-always exo-override"
               [routerLinkActiveOptions]="{exact: true}">Contact</a>
           </li>
+          <li *ngIf="type === NavBarType.Research" class="nav-item">
+            <a class="nav-link exo-underhover" routerLink="/Research/Our-Projects"
+              routerLinkActive="exo-underhover-always exo-override"
+              [routerLinkActiveOptions]="{exact: true}">Projects</a>
+          </li>
           <li *ngIf="type === NavBarType.Research" class="nav-item dropdown">
             <a class="nav-link dropdown-toggle exo-underhover" href="javascript:void(0)" id="navbarDropdown"
               role="button" data-toggle="dropdown" aria-expanded="false">
