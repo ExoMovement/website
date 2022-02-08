@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ContactComponent } from './home/contact/contact.component';
-import { PrivacyPolicyComponent } from './home/privacy-policy/privacy-policy.component';
-import { RefundReturnPolicyComponent } from './home/refund-return-policy/refund-return-policy.component';
-import { OurProjectsComponent } from './research/our-projects/our-projects.component';
-import { ResearchComponent } from './research/research/research.component';
-import { PrototypesComponent } from './services/prototypes/prototypes.component';
-import { ServicesComponent } from './services/services/services.component';
-import { ShopComponent } from './services/shop/shop.component';
-import {NavigationType } from "./components/NavigationEnums";
+import { ContactComponent } from './views/home/contact/contact.component';
+import { PrivacyPolicyComponent } from './views/home/privacy-policy/privacy-policy.component';
+import { RefundReturnPolicyComponent } from './views/home/refund-return-policy/refund-return-policy.component';
+import { OurProjectsComponent } from './views/research/our-projects/our-projects.component';
+import { ResearchComponent } from './views/research/research/research.component';
+import { PrototypesComponent } from './views/services/prototypes/prototypes.component';
+import { ServicesComponent } from './views/services/services/services.component';
+import { ShopComponent } from './views/services/shop/shop.component';
+import {NavigationType } from "./views/components/NavigationEnums";
 
 const routes: Routes = [
   { path: "", redirectTo: '/Research', pathMatch: 'full' },
