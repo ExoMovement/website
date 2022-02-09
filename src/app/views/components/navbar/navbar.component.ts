@@ -7,7 +7,7 @@ import {NavigationType } from "../NavigationEnums"
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  @Input() type: NavigationType = NavigationType.Home;
+  @Input() type!: NavigationType;
   public get NavBarType(): typeof NavigationType {
     return NavigationType; 
   }

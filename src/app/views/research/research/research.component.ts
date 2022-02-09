@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { NavigationType } from 'src/app/components/NavigationEnums';
+import {NavigationType } from "../../components/NavigationEnums"
 
 @Component({
   selector: 'app-research',

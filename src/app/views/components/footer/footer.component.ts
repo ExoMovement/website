@@ -7,7 +7,7 @@ import { NavigationType } from '../NavigationEnums';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-  @Input() type: NavigationType = NavigationType.Home;
+  @Input() type!: NavigationType;
   public get NavBarType(): typeof NavigationType {
     return NavigationType; 
   }
