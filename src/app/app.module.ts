@@ -14,6 +14,8 @@ import { OurProjectsComponent } from './views/research/our-projects/our-projects
 import { ServicesComponent } from './views/services/services/services.component';
 import { ResearchComponent } from './views/research/research/research.component';
 import { PrototypesComponent } from './views/services/prototypes/prototypes.component';
+import { IEmailService } from './services/email/email.service.interface';
+import { EmailService } from './services/email/email.service';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { PrototypesComponent } from './views/services/prototypes/prototypes.comp
     AppRoutingModule,
     NgbModule
   ],
-  providers: [],
+  providers: [
+    { provide: IEmailService, useClass: EmailService }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
