@@ -25,9 +25,11 @@ html, body {
 }
 /* Extend the on-hover to always shown */
 .exo-underhover-always::before {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
-
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 h2 {
   
