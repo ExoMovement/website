@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   email: {
-    username: "info@exomovement.com",
+    username: "info@exo-movement.com",
     password: "",
   }
 };

@@ -62,18 +62,6 @@ jobs:
       - name: Setup
         run: npm ci
       
-      
-      - name: Generate Environment File
-        run: |
-          touch ./src/environments/environment.prod.ts
-          echo export const environment = { >> ./src/environments/environment.prod.ts
-          echo production: true, >> ./src/environments/environment.prod.ts
-          echo email: { >> ./src/environments/environment.prod.ts
-          echo username: "production-env-info@exo-movement.com", >> ./src/environments/environment.prod.ts
-          echo password: "", >> ./src/environments/environment.prod.ts
-          echo } >> ./src/environments/environment.prod.ts
-          echo }; >> ./src/environments/environment.prod.ts
-
       - name: Conventional Changelog Action
         id: changelog
         uses: TriPSs/conventional-changelog-action@v3
