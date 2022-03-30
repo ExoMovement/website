@@ -1,0 +1,23 @@
+.carousel{
+    max-width: 100%;
+    max-height: 85vh;
+}
+.carousel-item{
+    max-height: 85vh;
+}
+.carousel-control-prev,
+.carousel-control-next{
+    bottom: 0%;
+    z-index: 0;
+}
+.container-fluid{
+    padding: 0;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+    height: 25%;
+    width: 25%;
+}
+.carousel-indicators{
+    padding-bottom: 1vh;
+}
