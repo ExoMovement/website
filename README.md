@@ -16,13 +16,13 @@ This is the [respository](https://github.com/ExoMovement/website) for the Exo-Mo
 ### Testing Locally (before commiting/create a PR)
 1. Lint project with command: `npm run lint`
 2. Unit Test project with command: `npm run test:ci`
-   a. To debug unit tests, run command: `npm run test`
-   b. Browser window should open, where detailed information will be available
-   c. When done, CTRL+C to escape terminal
+     * To debug unit tests, run command: `npm run test`
+     * Browser window should open, where detailed information will be available
+     * When done, CTRL+C to escape terminal
 3. End-To-End Test project with command: `npm run e2e:cypress:ci`
-   a. To debug end-to-end tests, run command: `npm run e2e`
-   b. Browswer window should open, where detailed information will be available
-   c. When done, CTRL+C to escape terminal
+     * To debug end-to-end tests, run command: `npm run e2e`
+     * Browswer window should open, where detailed information will be available
+     * When done, CTRL+C to escape terminal
 
 ### Code scaffolding
 
@@ -31,17 +31,21 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Pull Request (PR) Process
 
 1. Initiate a Pull Request for your branch
-   a. Go to the [repository](https://github.com/ExoMovement/website)
-   b. Find and select the branch dropdown
-![By default, the dropdown should say 'main'. It is on the left, above the code files](https://github.com/ExoMovement/website/blob/main/repo-code-tab.png?raw=true)
-   c. Select your branch from the list. 
-      i. If it does not appear, select view all branches, then find your branch in the in-depth list
-      ii. If neither location has your branch, ensure you've pushed your branch to github
-   d. Find and select 'Contribute', then 'Open pull request'
-![This should be just above the top-right of the code files]((https://github.com/ExoMovement/website/blob/main/repo-code-tab-create-pr.png?raw=true)
-   e. On the right side, link any relevant information
-      i. If projects/issues are being used, link the project, and include the word `closes #<ISSUE-NUMBER>` in the comment/description
-   f. Select 'Create pull request'
-   g. Ensure, the integration tests pass, and a reviewer approves your Pull Request
-![This should be just above the top-right of the code files]((https://github.com/ExoMovement/website/blob/main/pr-validations.png?raw=true)
-   h. Select "Merge pull request"
+     * Go to the [repository](https://github.com/ExoMovement/website)
+     * Find and select the branch dropdown
+<kbd>![By default, the dropdown should say 'main'. It is on the left, above the code files](https://github.com/ExoMovement/website/blob/main/readme-resources/repo-code-tab.png?raw=true)
+
+     * Select your branch from the list. 
+         * If it does not appear, select view all branches, then find your branch in the in-depth list
+         * If neither location has your branch, ensure you've pushed your branch to github
+     * Find and select 'Contribute', then 'Open pull request'
+<kbd>![This should be just above the top-right of the code files](https://github.com/ExoMovement/website/blob/main/readme-resources/repo-code-tab-create-pr.png?raw=true)
+  
+     * On the right side, link any relevant information
+         * If projects/issues are being used, link the project, and include the word `closes #<ISSUE-NUMBER>` in the comment/description
+     * Select 'Create pull request'
+2. Pass validation and get Pull Request approved
+     * Ensure the integration tests pass and a reviewer approves your Pull Request
+<kbd>![This should be just above the top-right of the code files](https://github.com/ExoMovement/website/blob/main/readme-resources/pr-validations.png?raw=true)
+  
+     * Select "Merge pull request"
