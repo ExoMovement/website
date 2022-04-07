@@ -27,9 +27,19 @@ html, body {
 .exo-underhover-always::before {
   transform: scaleX(1);
 }
+
+
+
+
+/*
 .dropdown:hover .dropdown-content {
   display: block;
 }
+*/
+.navbar .nav-item .dropdown-menu{ display: none; }
+.navbar .nav-item:hover .dropdown-menu{ display: block; }
+.navbar .nav-item:hover .dropdown-menu.dropdown-menu-end{   right: 0;  left: auto; }
+.navbar .nav-item .dropdown-menu{ margin-top:0; }
 
 h2 {
   
