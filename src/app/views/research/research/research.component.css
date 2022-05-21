@@ -8,7 +8,7 @@
 .carousel-control-prev,
 .carousel-control-next{
     bottom: 0%;
-    z-index: 0;
+    z-index: 1000;
 }
 .container-fluid{
     padding: 0;
@@ -21,3 +21,12 @@
 .carousel-indicators{
     padding-bottom: 1vh;
 }
+.overlay { 
+    color:#fff;
+    position:absolute;
+    z-index:12;
+    top:25%;
+    left:10%;
+    width:100%;
+    text-align:left;
+  }
