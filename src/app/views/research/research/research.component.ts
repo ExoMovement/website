@@ -5,7 +5,7 @@ import {NavigationType } from "../../components/NavigationEnums"
 @Component({
   selector: 'app-research',
   templateUrl: './research.component.html',
-  styleUrls: ['./research.component.css']
+  styleUrls: ['./research.component.scss']
 })
 export class ResearchComponent implements OnInit {
   public navigationType!: NavigationType;
