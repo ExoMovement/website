@@ -30,14 +30,12 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles/styles.css",
-              "src/styles/styles-color-palette.css",
-              "src/styles/styles-color-palette-override.css"
+              "src/styles/styles.scss",
+              "src/styles/styles-color-palette.scss",
+              "src/styles/styles-color-palette-override.scss"
             ],
             "scripts": [
-              "./node_modules/jquery/dist/jquery.min.js",  
-              "./node_modules/popper.js/dist/umd/popper.min.js",  
+              "./node_modules/@popperjs/core/dist/umd/popper.min.js",
               "./node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           },
@@ -103,14 +101,12 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles/styles.css",
-              "src/styles/styles-color-palette.css",
-              "src/styles/styles-color-palette-override.css"
+              "src/styles/styles.scss",
+              "src/styles/styles-color-palette.scss",
+              "src/styles/styles-color-palette-override.scss"
             ],
             "scripts": [
-              "./node_modules/jquery/dist/jquery.min.js",  
-              "./node_modules/popper.js/dist/umd/popper.min.js",  
+              "./node_modules/@popperjs/core/dist/umd/popper.min.js",
               "./node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           }

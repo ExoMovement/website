@@ -5,7 +5,7 @@ import {NavigationType } from "../../components/NavigationEnums"
 @Component({
   selector: 'app-prototypes',
   templateUrl: './prototypes.component.html',
-  styleUrls: ['./prototypes.component.css']
+  styleUrls: ['./prototypes.component.scss']
 })
 export class PrototypesComponent implements OnInit {
   public navigationType!: NavigationType;
