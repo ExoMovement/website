@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-light exo-background-white fixed-top align-items-start">
     
-  <a class="navbar-brand" routerLink="/">
+  <a class="navbar-brand" [routerLink]="['', { outlets: { primary: 'Research', navbar: 'Research'}}]">
     <img src="././assets/navbar/Exo-Logo.png" alt="">
   </a>
   <button class="navbar-toggler float-right mt-1" type="button" data-bs-toggle="collapse"
