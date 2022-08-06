@@ -13,7 +13,6 @@ export class FooterComponent implements OnInit {
 
   constructor(private _route: ActivatedRoute, private _navigation: INavigationTypeService) { }
   ngOnInit(): void {
-    console.log("Initializing footer...")
     this._navigation.getNavigationType(this._route).subscribe(navigationType => this.type = navigationType);
   }
 }
