@@ -1,7 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { FooterComponent } from '../../components/footer/footer.component';
-import { NavbarComponent } from '../../components/navbar/navbar.component';
 
 import { ServicesComponent } from './services.component';
 
@@ -11,7 +9,7 @@ describe('ServicesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ServicesComponent, NavbarComponent, FooterComponent ],
+      declarations: [ ServicesComponent ],
       imports: [
         RouterTestingModule.withRoutes([])
       ],

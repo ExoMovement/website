@@ -11,8 +11,7 @@ export class NavigationTypeService implements INavigationTypeService {
 
   public getNavigationType(route: ActivatedRoute): Observable<NavigationType> {
     return route.data.pipe(
-        map(routeData => routeData['navigationType']),
-        tap(navType => console.log("Navigation type: ", navType))
+        map(routeData => routeData['navigationType'])
       );
   }
 }
