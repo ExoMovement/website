@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NavigationType } from './services/navigation-type/navigation-type.service.interface';
-import { FooterComponent } from './views/components/footer/footer.component';
 import { NavbarComponent } from './views/components/navbar/navbar.component';
 import { ContactComponent } from './views/home/contact/contact.component';
 import { PrivacyPolicyComponent } from './views/home/privacy-policy/privacy-policy.component';
