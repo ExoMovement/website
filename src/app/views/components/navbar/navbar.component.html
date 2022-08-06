@@ -14,60 +14,70 @@
     id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto">
 
-        <li *ngIf="type === NavBarType.Research" class="nav-item">
-          <a class="nav-link exo-underhover" routerLink="/Research" routerLinkActive="exo-underhover-always exo-override"
-            [routerLinkActiveOptions]="{exact: true}">Research</a>
-        </li>
-        <li *ngIf="type === NavBarType.Research" class="nav-item">
-          <a class="nav-link exo-underhover" routerLink="/Research/Our-Projects"
-            routerLinkActive="exo-underhover-always exo-override"
-            [routerLinkActiveOptions]="{exact: true}">Projects</a>
-        </li>
-        <li *ngIf="type === NavBarType.Research" class="nav-item">
-          <a class="nav-link exo-underhover" routerLink="/Research/Contact"
-            routerLinkActive="exo-underhover-always exo-override"
-            [routerLinkActiveOptions]="{exact: true}">Contact</a>
-        </li>
-        <li *ngIf="type === NavBarType.Research" class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle exo-underhover" href="javascript:void(0)" id="navbarDropdown"
-            role="button" routerLink="/Services" aria-expanded="false" data-bs-toggle="dropdown">
-            Services
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end exo-children-hoverbackground-lightgrey dropdown-content" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item exo-underhover" routerLink="/Services/Prototypes">Prototypes</a></li>
-            <li><a class="dropdown-item exo-underhover" routerLink="/Services/Shop">Shop</a></li>
-          </ul>
-        </li>
+        <ng-container *ngIf="type === NavBarType.Research">
+          <li  class="nav-item">
+            <a class="nav-link exo-underhover" routerLink="/Research" routerLinkActive="exo-underhover-always exo-override"
+              [routerLinkActiveOptions]="{exact: true}">
+              Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link exo-underhover" routerLink="/Research/Our-Projects"
+              routerLinkActive="exo-underhover-always exo-override"
+              [routerLinkActiveOptions]="{exact: true}">
+              Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link exo-underhover" routerLink="/Contact"
+              routerLinkActive="exo-underhover-always exo-override"
+              [routerLinkActiveOptions]="{exact: true}">
+              Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle exo-underhover" href="javascript:void(0)" id="navbarDropdown"
+              role="button" aria-expanded="false" data-bs-toggle="dropdown" [routerLink]="['', { outlets: { primary: 'Services', navbar: 'Services'}}]">
+              Services
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end exo-children-hoverbackground-lightgrey dropdown-content" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item exo-underhover" [routerLink]="['', { outlets: { primary: 'Services/Prototypes', navbar: 'Services' }}]">
+                Prototypes</a></li>
+              <li><a class="dropdown-item exo-underhover" [routerLink]="['', { outlets: { primary: 'Services/Shop', navbar: 'Services' }}]">
+                Shop</a></li>
+            </ul>
+          </li>
+        </ng-container>
+        
+        <ng-container *ngIf="type === NavBarType.Services">
+          <li class="nav-item">
+            <a class="nav-link exo-underhover" routerLink="/Services" routerLinkActive="exo-underhover-always exo-override"
+              [routerLinkActiveOptions]="{exact: true}">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link exo-underhover" routerLink="/Services/Prototypes"
+              routerLinkActive="exo-underhover-always exo-override"
+              [routerLinkActiveOptions]="{exact: true}">Prototypes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link exo-underhover" routerLink="/Contact"
+              routerLinkActive="exo-underhover-always exo-override"
+              [routerLinkActiveOptions]="{exact: true}">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link exo-underhover" routerLink="/Services/Shop"
+              routerLinkActive="exo-underhover-always exo-override"
+              [routerLinkActiveOptions]="{exact: true}">Shop</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle exo-underhover" href="javascript:void(0)" id="navbarDropdown"
+              role="button" aria-expanded="false" data-bs-toggle="dropdown" [routerLink]="['', { outlets: { primary: 'Research', navbar: 'Research'}}]">
+              Research
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end exo-children-hoverbackground-lightgrey dropdown-content" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item exo-underhover" [routerLink]="['', { outlets: { primary: 'Research/Our-Projects', navbar: 'Research'}}]">
+                Projects</a></li>
+            </ul>
+          </li>
+        </ng-container>
 
-
-        <li *ngIf="type === NavBarType.Services" class="nav-item">
-          <a class="nav-link exo-underhover" routerLink="/Services" routerLinkActive="exo-underhover-always exo-override"
-            [routerLinkActiveOptions]="{exact: true}">Services</a>
-        </li>
-        <li *ngIf="type === NavBarType.Services" class="nav-item">
-          <a class="nav-link exo-underhover" routerLink="/Services/Prototypes"
-            routerLinkActive="exo-underhover-always exo-override"
-            [routerLinkActiveOptions]="{exact: true}">Prototypes</a>
-        </li>
-        <li *ngIf="type === NavBarType.Services" class="nav-item">
-          <a class="nav-link exo-underhover" routerLink="/Services/Contact"
-            routerLinkActive="exo-underhover-always exo-override"
-            [routerLinkActiveOptions]="{exact: true}">Contact</a>
-        </li>
-        <li *ngIf="type === NavBarType.Services" class="nav-item">
-          <a class="nav-link exo-underhover" routerLink="/Services/Shop"
-            routerLinkActive="exo-underhover-always exo-override"
-            [routerLinkActiveOptions]="{exact: true}">Shop</a>
-        </li>
-        <li *ngIf="type === NavBarType.Services" class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle exo-underhover" href="javascript:void(0)" id="navbarDropdown"
-            role="button" routerLink="/Research" aria-expanded="false" data-bs-toggle="dropdown">
-            Research
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end exo-children-hoverbackground-lightgrey dropdown-content" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item exo-underhover" routerLink="/Research/Our-Projects">Projects</a></li>
-          </ul>
-        </li>
       </ul>
   </div>
 </nav>

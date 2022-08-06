@@ -15,6 +15,8 @@ import { ResearchComponent } from './views/research/research/research.component'
 import { PrototypesComponent } from './views/services/prototypes/prototypes.component';
 import { IEmailService } from './services/email/email.service.interface';
 import { EmailService } from './services/email/email.service';
+import { INavigationTypeService } from './services/navigation-type/navigation-type.service.interface';
+import { NavigationTypeService } from './services/navigation-type/navigation-type.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { EmailService } from './services/email/email.service';
     AppRoutingModule,
   ],
   providers: [
-    { provide: IEmailService, useClass: EmailService }
+    { provide: IEmailService, useClass: EmailService },
+    { provide: INavigationTypeService, useClass: NavigationTypeService },
   ],
   bootstrap: [AppComponent]
 })

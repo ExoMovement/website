@@ -1,4 +1,6 @@
+@import "/src/styles/variables.scss";
+
 .container-fluid {
     padding: 0;
-    padding-bottom: 60px; /* The should match the height of the footer */
+    padding-bottom: $footer-height; /* The should match the height of the footer */
 }
