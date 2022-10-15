@@ -1,27 +1,38 @@
-
 <div class="container-fluid p-0">
     <div class="row">
-        <div id="researchCarouselIndicators" class="carousel slide col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" data-bs-ride="carousel">
+        <div id="researchCarouselIndicators" class="carousel slide col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"
+            data-bs-ride="carousel">
             <div class="overlay">
                 <h1 class="title">Welcome to <br> Exo-Movement</h1>
                 <h3 class="sub-title">Take the next step with us!</h3>
             </div>
             <div class="carousel-indicators">
-                <li *ngIf="carouselSlideItems.length > 0" data-bs-target="#researchCarouselIndicators" data-bs-slide-to="0" class="active"></li>
-                <li *ngIf="carouselSlideItems.length > 1" data-bs-target="#researchCarouselIndicators" data-bs-slide-to="1"></li>
-                <li *ngIf="carouselSlideItems.length > 2" data-bs-target="#researchCarouselIndicators" data-bs-slide-to="2"></li>
-                <li *ngIf="carouselSlideItems.length > 3" data-bs-target="#researchCarouselIndicators" data-bs-slide-to="3"></li>
-                <li *ngIf="carouselSlideItems.length > 4" data-bs-target="#researchCarouselIndicators" data-bs-slide-to="4"></li>
-                <li *ngIf="carouselSlideItems.length > 5" data-bs-target="#researchCarouselIndicators" data-bs-slide-to="5"></li>
-                <li *ngIf="carouselSlideItems.length > 6" data-bs-target="#researchCarouselIndicators" data-bs-slide-to="6"></li>
-                <li *ngIf="carouselSlideItems.length > 7" data-bs-target="#researchCarouselIndicators" data-bs-slide-to="7"></li>
-                <li *ngIf="carouselSlideItems.length > 8" data-bs-target="#researchCarouselIndicators" data-bs-slide-to="8"></li>
-                <li *ngIf="carouselSlideItems.length > 9" data-bs-target="#researchCarouselIndicators" data-bs-slide-to="9"></li>
-                <li *ngIf="carouselSlideItems.length > 10" data-bs-target="#researchCarouselIndicators" data-bs-slide-to="10"></li>
+                <li *ngIf="carouselSlideItems.length > 0" data-bs-target="#researchCarouselIndicators"
+                    data-bs-slide-to="0" class="active"></li>
+                <li *ngIf="carouselSlideItems.length > 1" data-bs-target="#researchCarouselIndicators"
+                    data-bs-slide-to="1"></li>
+                <li *ngIf="carouselSlideItems.length > 2" data-bs-target="#researchCarouselIndicators"
+                    data-bs-slide-to="2"></li>
+                <li *ngIf="carouselSlideItems.length > 3" data-bs-target="#researchCarouselIndicators"
+                    data-bs-slide-to="3"></li>
+                <li *ngIf="carouselSlideItems.length > 4" data-bs-target="#researchCarouselIndicators"
+                    data-bs-slide-to="4"></li>
+                <li *ngIf="carouselSlideItems.length > 5" data-bs-target="#researchCarouselIndicators"
+                    data-bs-slide-to="5"></li>
+                <li *ngIf="carouselSlideItems.length > 6" data-bs-target="#researchCarouselIndicators"
+                    data-bs-slide-to="6"></li>
+                <li *ngIf="carouselSlideItems.length > 7" data-bs-target="#researchCarouselIndicators"
+                    data-bs-slide-to="7"></li>
+                <li *ngIf="carouselSlideItems.length > 8" data-bs-target="#researchCarouselIndicators"
+                    data-bs-slide-to="8"></li>
+                <li *ngIf="carouselSlideItems.length > 9" data-bs-target="#researchCarouselIndicators"
+                    data-bs-slide-to="9"></li>
+                <li *ngIf="carouselSlideItems.length > 10" data-bs-target="#researchCarouselIndicators"
+                    data-bs-slide-to="10"></li>
             </div>
             <div class="carousel-inner">
-                <ng-container *ngFor="let carousel of carouselSlideItems">
-                    <div class="carousel-item" [ngClass]="{'active' : carousel.index === 0}">
+                <ng-container *ngFor="let carousel of carouselSlideItems; let index = index">
+                    <div class="carousel-item" [ngClass]="{'active' : index === 0}">
                         <img class="d-block w-100 h-85" src="{{carousel.href}}" alt="{{carousel.altText}}">
                     </div>
                 </ng-container>
@@ -34,15 +45,83 @@
                 <span class="carousel-control-next-icon w-25 h-25" aria-hidden="true"></span>
                 <span class="sr-only"></span>
             </a>
-            
+
         </div>
     </div>
-    <div class="row mx-0">
-        <div class="col-6 bg-danger">Hello</div>
-        <div class="col-6 bg-warning">Hello</div>
-    </div>
-    <div class="row mx-0">
-        <div class="col-6 bg-warning">Hello</div>
-        <div class="col-6 bg-danger">Hello</div>
-    </div>
+    <section name="overview">
+
+        <div class="row mx-0 pt-5 justify-content-center bg-light-grey">
+            <hr>
+            <h2 class="col-auto fw-bold">Overview</h2>
+        </div>
+        <ng-container *ngFor="let descriptionItem of descriptions; let i = index">
+            <div class="row mx-0 gy-1 py-4 bg-light-grey" [ngClass]="{'flex-row-reverse' : i % 2 === 1}">
+                <div class="col-4">
+                    <img class="img-fluid" src="{{descriptionItem.href}}" alt="{{descriptionItem.altText}}">
+                </div>
+                <div class="col-8">
+                    <h4>{{descriptionItem.title}}</h4>
+                    <h5 *ngIf="descriptionItem.subtitle" class="fw-normal"><em>{{descriptionItem.subtitle}}</em></h5>
+                    <p>{{descriptionItem.description}}</p>
+                </div>
+            </div>
+        </ng-container>
+    </section>
+    <section name="team">
+        <div class="row mx-0 pt-5 justify-content-center text-bg-secondary">
+            <h3 class="col-auto">Team</h3>
+        </div>
+        <div class="row mx-0 gy-1 gx-0 py-4 text-bg-secondary">
+            <div class="col-3">
+                <ng-container *ngFor="let member of team; let i = index">
+                    <button class="row mx-0 border border-grey rounded-0 btn btn-secondary w-100 d-flex" [ngClass]="{'text-bg-grey' : member === selectedMember}" (click)="onMemberSelected(member)">
+                        <div class="col-4 py-2">
+                            <div class="ratio ratio-1x1 rounded-circle overflow-hidden p-5">
+                                <img class="img-fluid" src="{{member.href}}" alt="{{member.altText}}">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <span *ngIf="member !== selectedMember">
+                                <h4>{{member.title}}</h4>
+                                <h5 *ngIf="member.subtitle" class="fw-normal"><em>{{member.subtitle}}</em></h5>
+                            </span>
+                        </div>
+                    </button>
+                </ng-container>
+            </div>
+            <div class="col-9 text-bg-grey px-3 py-2">
+                <div class="row mx-0">
+                    <div class="col-7">
+                        <h2 class="fw-bold">{{selectedMember.title}}</h2>
+                        <h3 *ngIf="selectedMember.subtitle" class="fw-normal"><em>{{selectedMember.subtitle}}</em></h3>
+                        <hr>
+                        <p>{{selectedMember.description}}</p>
+                    </div>
+                    <div class="col-5">
+                        <img class="img-fluid" src="{{selectedMember.href}}" alt="{{selectedMember.altText}}">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section name="timeline">
+        <div class="row mx-0 pt-5 justify-content-center bg-light-grey">
+            <hr>
+            <h2 class="col-auto fw-bold">Timeline</h2>
+        </div>
+        <ng-container *ngFor="let item of timeline; let i = index">
+            <div class="row mx-0 gy-1 pb-1 bg-light-grey" [ngClass]="{'flex-row-reverse' : i % 2 === 1}">
+                <div class="col-4">
+                    <img class="img-fluid" src="{{item.href}}" alt="{{item.altText}}">
+                </div>
+                <div class="col-8">
+                    <h4>{{item.title}}</h4>
+                    <h5 *ngIf="item.subtitle" class="fw-normal"><em>{{item.subtitle}}</em></h5>
+                    <p>{{item.description}}</p>
+                </div>
+            </div>
+        </ng-container>
+    </section>
 </div>
