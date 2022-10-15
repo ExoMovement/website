@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { ActivatedRoute, Data } from '@angular/router';
-import { tap, map, Observable } from 'rxjs';
+import { ActivatedRoute } from '@angular/router';
+import { map, Observable } from 'rxjs';
 import { INavigationTypeService, NavigationType } from './navigation-type.service.interface';
 
 @Injectable({
