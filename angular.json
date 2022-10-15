@@ -2,7 +2,9 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
     "analytics": "5cb2efc6-32d9-447b-bb85-ca34c7a231f5",
-    "defaultCollection": "@angular-eslint/schematics"
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   },
   "version": 1,
   "newProjectRoot": "projects",
@@ -156,6 +158,5 @@
         }
       }
     }
-  },
-  "defaultProject": "website"
+  }
 }
