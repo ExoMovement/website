@@ -1,10 +1,10 @@
-<div class="container-fluid p-0">
-    <div class="row">
-        <div id="researchCarouselIndicators" class="carousel slide col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"
+<div class="container-xxl p-0">
+    <div class="row mx-0 bg-light-grey">
+        <div id="researchCarouselIndicators" class="carousel slide col-12 px-0"
             data-bs-ride="carousel">
-            <div class="overlay">
-                <h1 class="title">Welcome to <br> Exo-Movement</h1>
-                <h3 class="sub-title">Take the next step with us!</h3>
+            <div class="overlay text-light">
+                <div class="fs-3 fs-sm-2 fs-md-1 lh-sm fw-bold text-outlined">Welcome to <br> Exo-Movement</div>
+                <div class="d-none d-sm-block fs-sm-4 fs-md-3 lh-sm text-outlined">Take the next step with us!</div>
             </div>
             <div class="carousel-indicators">
                 <li *ngIf="carouselSlideItems.length > 0" data-bs-target="#researchCarouselIndicators"
@@ -47,23 +47,39 @@
             </a>
 
         </div>
+        
+        <div class="col-auto d-block d-sm-none fs-5 lh-1 text-light text-outlined mx-auto">Take the next step with us!</div>
     </div>
     <section name="overview">
-
         <div class="row mx-0 pt-5 justify-content-center bg-light-grey">
             <hr>
-            <h2 class="col-auto fw-bold">Overview</h2>
+            <h4 class="col-auto fw-bold">Overview</h4>
         </div>
         <ng-container *ngFor="let descriptionItem of descriptions; let i = index">
             <div class="row mx-0 gy-1 py-4 bg-light-grey" [ngClass]="{'flex-row-reverse' : i % 2 === 1}">
-                <div class="col-4">
+                <div class="col-12 d-block d-sm-none">
+                    <h5>{{descriptionItem.title}}</h5>
+                    <h6 *ngIf="descriptionItem.subtitle" class="fw-normal"><em>{{descriptionItem.subtitle}}</em></h6>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
                     <img class="img-fluid" src="{{descriptionItem.href}}" alt="{{descriptionItem.altText}}">
                 </div>
-                <div class="col-8">
-                    <h4>{{descriptionItem.title}}</h4>
-                    <h5 *ngIf="descriptionItem.subtitle" class="fw-normal"><em>{{descriptionItem.subtitle}}</em></h5>
+                <div class="col-12 col-sm-6 col-md-8">
+                    <span class="d-none d-sm-block">
+                        <h5>{{descriptionItem.title}}</h5>
+                        <h6 *ngIf="descriptionItem.subtitle" class="fw-normal"><em>{{descriptionItem.subtitle}}</em></h6>
+                    </span>
+                    <span class="d-none d-md-block">
+                        <p>{{descriptionItem.description}}</p>
+                    </span>
+                </div>
+                <div class="col-12 d-block d-md-none">
                     <p>{{descriptionItem.description}}</p>
                 </div>
+            </div>
+            
+            <div class="row mx-0 px-3">
+                <hr class="my-0">
             </div>
         </ng-container>
     </section>
@@ -73,15 +89,15 @@
         </div>
         <div class="row mx-0 gy-1 gx-0 py-4 text-bg-secondary">
             <div class="col-3">
-                <ng-container *ngFor="let member of team; let i = index">
-                    <button class="row mx-0 border border-grey rounded-0 btn btn-secondary w-100 d-flex" [ngClass]="{'text-bg-grey' : member === selectedMember}" (click)="onMemberSelected(member)">
+                <ng-container *ngFor="let member of team">
+                    <button class="row mx-0 border border-grey rounded-0 btn btn-secondary w-100 d-flex" [ngClass]="{'text-bg-grey' : member.index === selectedMember.index}" (click)="onMemberSelected(member)">
                         <div class="col-4 py-2">
                             <div class="ratio ratio-1x1 rounded-circle overflow-hidden p-5">
                                 <img class="img-fluid" src="{{member.href}}" alt="{{member.altText}}">
                             </div>
                         </div>
-                        <div class="col-8">
-                            <span *ngIf="member !== selectedMember">
+                        <div class="col-8 text-dark">
+                            <span *ngIf="member.index !== selectedMember.index">
                                 <h4>{{member.title}}</h4>
                                 <h5 *ngIf="member.subtitle" class="fw-normal"><em>{{member.subtitle}}</em></h5>
                             </span>

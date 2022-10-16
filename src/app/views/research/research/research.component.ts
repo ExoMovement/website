@@ -24,8 +24,9 @@ export class ResearchComponent implements OnInit {
     ];
 
     this.descriptions = [
-      new Description("./././assets/home/arduino-board-concept.png", "undefined image", "What is our goal?", "The reason", "We are doing exo-skeleton"),
-      new Description("./././assets/home/arduino-board-concept.png", "undefined image", "Why", "", "It seems like the right thing to do"),
+      new Description("./././assets/home/arduino-board-concept.png", "undefined image", "What is Exo-Movement?", "A Bio-Mechanical Company", "Exo-Movement is a for-profit company in the biomechanical field developing an exoskeleton suit for those who are paralysis victims, specifically paraplegics. The suit will provide its user more independence and improve their quality of life through a non-invasive method of regaining the ability to walk, bend over, and pick up items."),
+      new Description("./././assets/home/arduino-board-concept.png", "undefined image", "Why paralysis victims?", "The undersupported populus", "There are currently 5.4 million people in America suffering from paralysis. They cannot stand, walk or lift anything without some form of assistance. Most individuals incur upwards of $2.5 million in medical bills over the course of their lives, all while being provided minimal medical options. Oue device aims to ease this economic nightmare and allow these individuals to return to some form of normalcy."),
+      new Description("./././assets/home/arduino-board-concept.png", "undefined image", "How does it work?", "Mind-Controlled Robo-Suit", "The device is meant to assist with torso movement and lifting strength. It will be controlled through an electroencephalogram (EEG) and a series of motors and actuators. Essentially, it would control the motion of the user's upper body by reading the electrical signals from the brain, just as your muscles do now. It will maintain the natural motion paths and even offer predictive movements through a machine learning protocol (artificial intelligence)"),
     ]
 
     this.team = [
@@ -56,6 +57,8 @@ class CarouselSlideItem extends ImageHref {
 }
 
 class Description extends ImageHref {
+  static DescriptionIndex: number = 0;
+  index: number;
   title: string;
   subtitle: string
   description: string;
@@ -65,5 +68,6 @@ class Description extends ImageHref {
     this.title = title;
     this.subtitle = subtitle;
     this.description = description;
+    this.index = Description.DescriptionIndex++;
   }
 }
