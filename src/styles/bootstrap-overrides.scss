@@ -48,6 +48,15 @@ $utilities: map-merge(
         responsive: true
       ),
     ),
+    "width": map-merge(
+      map-get($utilities, "width"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "width"), "values"),
+          (33: 33%),
+        ),
+      ),
+    ),
   )
 );
 

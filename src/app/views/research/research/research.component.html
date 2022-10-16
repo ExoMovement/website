@@ -1,7 +1,6 @@
 <div class="container-xxl p-0">
     <div class="row mx-0 bg-light-grey">
-        <div id="researchCarouselIndicators" class="carousel slide col-12 px-0"
-            data-bs-ride="carousel">
+        <div id="researchCarouselIndicators" class="carousel slide col-12 px-0" data-bs-ride="carousel">
             <div class="overlay text-light">
                 <div class="fs-3 fs-sm-2 fs-md-1 lh-sm fw-bold text-outlined">Welcome to <br> Exo-Movement</div>
                 <div class="d-none d-sm-block fs-sm-4 fs-md-3 lh-sm text-outlined">Take the next step with us!</div>
@@ -47,8 +46,9 @@
             </a>
 
         </div>
-        
-        <div class="col-auto d-block d-sm-none fs-5 lh-1 text-light text-outlined mx-auto">Take the next step with us!</div>
+
+        <div class="col-auto d-block d-sm-none fs-5 lh-1 text-light text-outlined mx-auto">Take the next step with us!
+        </div>
     </div>
     <section name="overview">
         <div class="row mx-0 pt-5 justify-content-center bg-light-grey">
@@ -67,7 +67,8 @@
                 <div class="col-12 col-sm-6 col-md-8">
                     <span class="d-none d-sm-block">
                         <h5>{{descriptionItem.title}}</h5>
-                        <h6 *ngIf="descriptionItem.subtitle" class="fw-normal"><em>{{descriptionItem.subtitle}}</em></h6>
+                        <h6 *ngIf="descriptionItem.subtitle" class="fw-normal"><em>{{descriptionItem.subtitle}}</em>
+                        </h6>
                     </span>
                     <span class="d-none d-md-block">
                         <p>{{descriptionItem.description}}</p>
@@ -77,7 +78,7 @@
                     <p>{{descriptionItem.description}}</p>
                 </div>
             </div>
-            
+
             <div class="row mx-0 px-3">
                 <hr class="my-0">
             </div>
@@ -85,41 +86,51 @@
     </section>
     <section name="team">
         <div class="row mx-0 pt-5 justify-content-center text-bg-secondary">
-            <h3 class="col-auto">Team</h3>
+            <h4 class="col-auto">Team</h4>
         </div>
         <div class="row mx-0 gy-1 gx-0 py-4 text-bg-secondary">
-            <div class="col-3">
+            <div class="col-lg-3">
                 <ng-container *ngFor="let member of team">
-                    <button class="row mx-0 border border-grey rounded-0 btn btn-secondary w-100 d-flex" [ngClass]="{'text-bg-grey' : member.index === selectedMember.index}" (click)="onMemberSelected(member)">
-                        <div class="col-4 py-2">
-                            <div class="ratio ratio-1x1 rounded-circle overflow-hidden p-5">
+                    <button class="row mx-0 border border-grey rounded-0 btn btn-secondary w-100 d-none d-lg-flex"
+                        [ngClass]="{'bg-grey' : member.index === selectedMember.index}"
+                        (click)="onMemberSelected(member)">
+                        <div class="col-12 px-0">
+                            <div class="ratio ratio-1x1 rounded-circle overflow-hidden p-4 w-25 float-start">
                                 <img class="img-fluid" src="{{member.href}}" alt="{{member.altText}}">
                             </div>
-                        </div>
-                        <div class="col-8 text-dark">
                             <span *ngIf="member.index !== selectedMember.index">
-                                <h4>{{member.title}}</h4>
-                                <h5 *ngIf="member.subtitle" class="fw-normal"><em>{{member.subtitle}}</em></h5>
+                                <div class="fs-5 fw-semibold">{{member.title}}</div>
+                                <div *ngIf="member.subtitle" class="fs-6 fw-normal"><em>{{member.subtitle}}</em></div>
                             </span>
                         </div>
                     </button>
+                    <div class="row mx-0 border border-grey d-flex d-lg-none py-3">
+                        <div class="col-12 d-block d-sm-none">
+                            <h4 class="fw-bold">{{member.title}}</h4>
+                            <h5 *ngIf="member.subtitle" class="fw-normal"><em>{{member.subtitle}}</em></h5>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <img class="w-100" src="{{member.href}}" alt="{{member.altText}}">
+                        </div>
+                        <div class="col-12 col-sm-8">
+                            <span class="d-none d-sm-block">
+                                <h4 class="fw-bold">{{member.title}}</h4>
+                                <h5 *ngIf="member.subtitle" class="fw-normal"><em>{{member.subtitle}}</em></h5>
+                                <hr>
+                            </span>
+                            <p>{{member.description}}</p>
+                        </div>
+                    </div>
+
                 </ng-container>
             </div>
-            <div class="col-9 text-bg-grey px-3 py-2">
-                <div class="row mx-0">
-                    <div class="col-7">
-                        <h2 class="fw-bold">{{selectedMember.title}}</h2>
-                        <h3 *ngIf="selectedMember.subtitle" class="fw-normal"><em>{{selectedMember.subtitle}}</em></h3>
-                        <hr>
-                        <p>{{selectedMember.description}}</p>
-                    </div>
-                    <div class="col-5">
-                        <img class="img-fluid" src="{{selectedMember.href}}" alt="{{selectedMember.altText}}">
-                    </div>
-                </div>
-
+            <div class="col-lg-9 d-none d-lg-block text-bg-grey p-3">
+                <img class="float-end m-2 w-33" src="{{selectedMember.href}}" alt="{{selectedMember.altText}}">
+                <h4 class="fw-bold">{{selectedMember.title}}</h4>
+                <h5 *ngIf="selectedMember.subtitle" class="fw-normal"><em>{{selectedMember.subtitle}}</em></h5>
+                <hr>
+                <p>{{selectedMember.description}}</p>
             </div>
-
         </div>
     </section>
     <section name="timeline">
