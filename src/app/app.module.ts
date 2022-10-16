@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { NavbarComponent } from './views/components/navbar/navbar.component';
 import { FooterComponent } from './views/components/footer/footer.component';
@@ -16,6 +15,8 @@ import { ResearchComponent } from './views/research/research/research.component'
 import { PrototypesComponent } from './views/services/prototypes/prototypes.component';
 import { IEmailService } from './services/email/email.service.interface';
 import { EmailService } from './services/email/email.service';
+import { INavigationTypeService } from './services/navigation-type/navigation-type.service.interface';
+import { NavigationTypeService } from './services/navigation-type/navigation-type.service';
 
 @NgModule({
   declarations: [
@@ -34,10 +35,10 @@ import { EmailService } from './services/email/email.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
   ],
   providers: [
-    { provide: IEmailService, useClass: EmailService }
+    { provide: IEmailService, useClass: EmailService },
+    { provide: INavigationTypeService, useClass: NavigationTypeService },
   ],
   bootstrap: [AppComponent]
 })

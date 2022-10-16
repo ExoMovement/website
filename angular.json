@@ -2,7 +2,9 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
     "analytics": "5cb2efc6-32d9-447b-bb85-ca34c7a231f5",
-    "defaultCollection": "@angular-eslint/schematics"
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   },
   "version": 1,
   "newProjectRoot": "projects",
@@ -30,14 +32,16 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles/styles.css",
-              "src/styles/styles-color-palette.css",
-              "src/styles/styles-color-palette-override.css"
+              "src/styles/bootstrap-overrides.scss",
+              "node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/solid.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/brands.min.css",
+              "src/styles/styles.scss",
+              "src/styles/styles-color-palette.scss",
+              "src/styles/styles-color-palette-override.scss"
             ],
             "scripts": [
-              "./node_modules/jquery/dist/jquery.min.js",  
-              "./node_modules/popper.js/dist/umd/popper.min.js",  
+              "./node_modules/@popperjs/core/dist/umd/popper.min.js",
               "./node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           },
@@ -103,14 +107,16 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles/styles.css",
-              "src/styles/styles-color-palette.css",
-              "src/styles/styles-color-palette-override.css"
+              "src/styles/bootstrap-overrides.scss",
+              "node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/solid.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/brands.min.css",
+              "src/styles/styles.scss",
+              "src/styles/styles-color-palette.scss",
+              "src/styles/styles-color-palette-override.scss"
             ],
             "scripts": [
-              "./node_modules/jquery/dist/jquery.min.js",  
-              "./node_modules/popper.js/dist/umd/popper.min.js",  
+              "./node_modules/@popperjs/core/dist/umd/popper.min.js",
               "./node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           }
@@ -160,6 +166,5 @@
         }
       }
     }
-  },
-  "defaultProject": "website"
+  }
 }
