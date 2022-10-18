@@ -9,7 +9,8 @@ This is the [respository](https://github.com/ExoMovement/website) for the Exo-Mo
 ## Development
 
 ### Running Locally
-1. Run the command: `npm start` or `ng serve`
+1. Install any dependencies locally with: `npm install`
+1. Run the application with: `npm start` or `ng serve`
 2. Navigate to [http://localhost:4200/](http://localhost:4200/)
 3. When done, CTRL+C to escape terminal
 
