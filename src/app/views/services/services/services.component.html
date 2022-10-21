@@ -1,1 +1,46 @@
-<p>services works!</p>
+<div class="container-xxl p-0">
+    <div class="row mx-0 bg-light-grey">
+        <app-carousel class="px-0" [carouselSlideItems]="carouselSlideItems">
+            <ng-template #Title>
+                Welcome to <br> Exo-Movement
+            </ng-template>
+            <ng-template #SubTitle>
+                3D Design and Software Consultations 
+            </ng-template>
+        </app-carousel>
+    </div>
+    <section name="overview">
+        <div class="row mx-0 pt-5 justify-content-center bg-light-grey">
+            <hr>
+            <h4 class="col-auto fw-bold">Overview</h4>
+        </div>
+        <ng-container *ngFor="let descriptionItem of descriptions; let i = index">
+            <div class="row mx-0 gy-1 py-4 bg-light-grey" [ngClass]="{'flex-row-reverse' : i % 2 === 1}">
+                <div class="col-12 d-block d-sm-none">
+                    <h5>{{descriptionItem.title}}</h5>
+                    <h6 *ngIf="descriptionItem.subtitle" class="fw-normal"><em>{{descriptionItem.subtitle}}</em></h6>
+                </div>
+                <div class="col-12 col-md-4 col-lg-2 d-none d-md-block">
+                    <img class="img-fluid" src="{{descriptionItem.href}}" alt="{{descriptionItem.altText}}">
+                </div>
+                <div class="col-12 col-md-8 col-lg-10">
+                    <span class="d-none d-sm-block">
+                        <h5>{{descriptionItem.title}}</h5>
+                        <h6 *ngIf="descriptionItem.subtitle" class="fw-normal"><em>{{descriptionItem.subtitle}}</em>
+                        </h6>
+                    </span>
+                    <span class="d-none d-md-block">
+                        <p>{{descriptionItem.description}}</p>
+                    </span>
+                </div>
+                <div class="col-12 d-block d-md-none">
+                    <p>{{descriptionItem.description}}</p>
+                </div>
+            </div>
+
+            <div class="row mx-0 px-3">
+                <hr class="my-0">
+            </div>
+        </ng-container>
+    </section>
+</div>

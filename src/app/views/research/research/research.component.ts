@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ImageHref } from 'src/app/models/image';
+import { CarouselSlideItem } from '../../components/carousel/carousel.component';
 
 @Component({
   selector: 'app-research',
@@ -66,12 +67,6 @@ export class ResearchComponent implements OnInit {
 
   onMemberSelected(member: Description): void {
     this.selectedMember = member;
-  }
-}
-
-class CarouselSlideItem extends ImageHref {
-  constructor(href: string, altText: string) {
-    super(href, altText);
   }
 }
 

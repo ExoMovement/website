@@ -17,6 +17,7 @@ import { IEmailService } from './services/email/email.service.interface';
 import { EmailService } from './services/email/email.service';
 import { INavigationTypeService } from './services/navigation-type/navigation-type.service.interface';
 import { NavigationTypeService } from './services/navigation-type/navigation-type.service';
+import { CarouselComponent } from './views/components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { NavigationTypeService } from './services/navigation-type/navigation-typ
     OurProjectsComponent,
     ServicesComponent,
     ResearchComponent,
-    PrototypesComponent
+    PrototypesComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
