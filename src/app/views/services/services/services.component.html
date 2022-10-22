@@ -1,46 +1,86 @@
-<div class="container-xxl p-0">
-    <div class="row mx-0 bg-light-grey">
+<div class="container-xxl p-0 text-bg-dark">
+    <div class="row mx-0 text-bg-dark">
         <app-carousel class="px-0" [carouselSlideItems]="carouselSlideItems">
             <ng-template #Title>
                 Welcome to <br> Exo-Movement
             </ng-template>
             <ng-template #SubTitle>
-                3D Design and Software Consultations 
+                3D Design and Software Consultations
             </ng-template>
         </app-carousel>
     </div>
-    <section name="overview">
-        <div class="row mx-0 pt-5 justify-content-center bg-light-grey">
+    <section name="services">
+        <div class="row mx-0 mt-5 mb-3 justify-content-center text-bg-dark">
             <hr>
-            <h4 class="col-auto fw-bold">Overview</h4>
+            <h4 class="col-auto fw-bold">Services</h4>
         </div>
-        <ng-container *ngFor="let descriptionItem of descriptions; let i = index">
-            <div class="row mx-0 gy-1 py-4 bg-light-grey" [ngClass]="{'flex-row-reverse' : i % 2 === 1}">
-                <div class="col-12 d-block d-sm-none">
-                    <h5>{{descriptionItem.title}}</h5>
-                    <h6 *ngIf="descriptionItem.subtitle" class="fw-normal"><em>{{descriptionItem.subtitle}}</em></h6>
+        <div class="row mx-0 row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center text-bg-dark py-3">
+            <ng-container *ngFor="let service of services">
+                <div class="col">
+                    <div class="card h-100 shadow text-secondary text-bg-secondary">
+                        <div class="card-header text-bg-light">
+                            <h5 class="card-title">{{service.title}}</h5>
+                            <h6 *ngIf="service.subtitle" class="card-subtitle text-muted">{{service.subtitle}}</h6>
+                        </div>
+                        <div class="card-body text-bg-light">
+                            <ul class="card-text">
+                                <ng-container *ngFor="let itemDescription of service.items">
+                                    <li>{{itemDescription}}</li>
+                                </ng-container>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-md-4 col-lg-2 d-none d-md-block">
-                    <img class="img-fluid" src="{{descriptionItem.href}}" alt="{{descriptionItem.altText}}">
-                </div>
-                <div class="col-12 col-md-8 col-lg-10">
-                    <span class="d-none d-sm-block">
-                        <h5>{{descriptionItem.title}}</h5>
-                        <h6 *ngIf="descriptionItem.subtitle" class="fw-normal"><em>{{descriptionItem.subtitle}}</em>
+            </ng-container>
+        </div>
+        <div class="row mx-0 justify-content-center text-bg-dark pb-5">
+            <div class="col-12">
+                <div class="card h-100 shadow text-secondary text-bg-secondary">
+                    <div class="card-header text-bg-light">
+                        <h5 class="card-title">{{serviceGeneral.title}}</h5>
+                        <h6 *ngIf="serviceGeneral.subtitle" class="card-subtitle text-muted">{{serviceGeneral.subtitle}}
                         </h6>
-                    </span>
-                    <span class="d-none d-md-block">
-                        <p>{{descriptionItem.description}}</p>
-                    </span>
-                </div>
-                <div class="col-12 d-block d-md-none">
-                    <p>{{descriptionItem.description}}</p>
+                    </div>
+                    <div class="card-body text-bg-light">
+                        <p class="card-text">
+                            {{serviceGeneral.items[0]}}
+                        </p>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section id="FAQs">
+        <div class="row mx-0 mt-1 justify-content-center text-bg-secondary">
+            <hr>
+            <h4 class="col-auto fw-bold">FAQs</h4>
+        </div>
+        <div class="row mx-0 pt-2 pb-5 text-bg-secondary">
+            <div class="accordion accordion-flush">
+                <ng-container *ngFor="let questionAndAnswer of faqs; let i = index">
+                    <div class="accordion-item">
+                        <button class="accordion-button" [ngClass]="{'collapsed': !questionAndAnswer.isShowing}" type="button" 
+                            (click)="toggleAccordianItem(questionAndAnswer)">
+                            <div class="row mx-0 gx-0">
+                                <div class="col-12">
+                                    <h5>{{questionAndAnswer.title}}</h5>
+                                </div>
+                                <ng-container *ngIf="questionAndAnswer.subtitle">
+                                    <div class="col-12 text-black text-muted">
+                                        <h6>{{questionAndAnswer.subtitle}}</h6>
+                                    </div>
 
-            <div class="row mx-0 px-3">
-                <hr class="my-0">
+                                </ng-container>
+                            </div>
+                        </button>
+                        <div class="accordion-collapse collapse fade" [ngClass]="{'show': questionAndAnswer.isShowing}">
+                            <div class="accordion-body">
+                                {{questionAndAnswer.answer}}
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>
             </div>
-        </ng-container>
+        </div>
     </section>
 </div>

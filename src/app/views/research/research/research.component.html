@@ -1,5 +1,5 @@
 <div class="container-xxl p-0">
-    <div class="row mx-0 bg-light-grey">
+    <div class="row mx-0 bg-light">
         <app-carousel class="px-0" [carouselSlideItems]="carouselSlideItems">
             <ng-template #Title>
                 Welcome to <br> Exo-Movement
@@ -10,12 +10,12 @@
         </app-carousel>
     </div>
     <section name="overview">
-        <div class="row mx-0 pt-5 justify-content-center bg-light-grey">
+        <div class="row mx-0 pt-5 justify-content-center bg-light">
             <hr>
             <h4 class="col-auto fw-bold">Overview</h4>
         </div>
         <ng-container *ngFor="let descriptionItem of descriptions; let i = index">
-            <div class="row mx-0 gy-1 py-4 bg-light-grey" [ngClass]="{'flex-row-reverse' : i % 2 === 1}">
+            <div class="row mx-0 gy-1 py-4 bg-light" [ngClass]="{'flex-row-reverse' : i % 2 === 1}">
                 <div class="col-12 d-block d-sm-none">
                     <h5>{{descriptionItem.title}}</h5>
                     <h6 *ngIf="descriptionItem.subtitle" class="fw-normal"><em>{{descriptionItem.subtitle}}</em></h6>
@@ -50,8 +50,8 @@
         <div class="row mx-0 gy-1 gx-0 py-4 text-bg-secondary">
             <div class="col-lg-3">
                 <ng-container *ngFor="let member of team">
-                    <button class="row mx-0 border border-grey rounded-0 btn btn-secondary w-100 d-none d-lg-flex"
-                        [ngClass]="{'bg-grey' : member.index === selectedMember.index}"
+                    <button class="row mx-0 border border-dark rounded-0 btn btn-secondary w-100 d-none d-lg-flex"
+                        [ngClass]="{'bg-dark' : member.index === selectedMember.index}"
                         (click)="onMemberSelected(member)">
                         <div class="col-12 px-0">
                             <div class="ratio ratio-1x1 rounded-circle overflow-hidden p-4 w-25 float-start">
@@ -63,7 +63,7 @@
                             </span>
                         </div>
                     </button>
-                    <div class="row mx-0 border border-grey d-flex d-lg-none py-3">
+                    <div class="row mx-0 border border-dark d-flex d-lg-none py-3">
                         <div class="col-12 d-block d-sm-none">
                             <h4 class="fw-bold">{{member.title}}</h4>
                             <h5 *ngIf="member.subtitle" class="fw-normal"><em>{{member.subtitle}}</em></h5>
@@ -83,7 +83,7 @@
 
                 </ng-container>
             </div>
-            <div class="col-lg-9 d-none d-lg-block text-bg-grey p-3">
+            <div class="col-lg-9 d-none d-lg-block text-bg-dark p-3">
                 <img class="float-end m-2 w-33" src="{{selectedMember.href}}" alt="{{selectedMember.altText}}">
                 <h4 class="fw-bold">{{selectedMember.title}}</h4>
                 <h5 *ngIf="selectedMember.subtitle" class="fw-normal"><em>{{selectedMember.subtitle}}</em></h5>
@@ -93,11 +93,11 @@
         </div>
     </section>
     <section name="timeline">
-        <div class="row mx-0 pt-5 pb-3 justify-content-center bg-light-grey">
+        <div class="row mx-0 pt-5 pb-3 justify-content-center bg-light">
             <hr>
             <h4 class="col-auto fw-bold">Timeline</h4>
         </div>
-        <div class="row mx-0 justify-content-center pb-1 bg-light-grey">
+        <div class="row mx-0 justify-content-center pb-1 bg-light">
             <ul class="col-10 col-sm-8 col-lg-6 list-unstyled border-start">
                 <ng-container *ngFor="let item of timeline; let i = index">
                     <li class="ps-3 pb-5 position-relative">
