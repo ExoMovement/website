@@ -62,7 +62,7 @@
                         <button class="accordion-button" [ngClass]="{'collapsed': !questionAndAnswer.isShowing}" type="button" 
                             (click)="toggleAccordianItem(questionAndAnswer)">
                             <div class="row mx-0 gx-0">
-                                <div class="col-12">
+                                <div class="col-12 text-primary">
                                     <h5>{{questionAndAnswer.title}}</h5>
                                 </div>
                                 <ng-container *ngIf="questionAndAnswer.subtitle">
