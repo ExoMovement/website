@@ -1,0 +1,54 @@
+<div id="researchCarouselIndicators" class="carousel slide col-12 px-0" data-bs-ride="carousel">
+    <div class="overlay text-white">
+        <div class="fs-3 fs-sm-2 fs-md-1 lh-sm fw-bold text-outlined">
+            <ng-container *ngTemplateOutlet="Title"></ng-container>
+        </div>
+        <div class="d-none d-sm-block fs-sm-4 fs-md-3 lh-sm text-outlined">
+            <ng-container *ngTemplateOutlet="SubTitle"></ng-container>
+        </div>
+    </div>
+    <div class="carousel-indicators">
+        <li *ngIf="carouselSlideItems.length > 0" data-bs-target="#researchCarouselIndicators"
+            data-bs-slide-to="0" class="active"></li>
+        <li *ngIf="carouselSlideItems.length > 1" data-bs-target="#researchCarouselIndicators"
+            data-bs-slide-to="1"></li>
+        <li *ngIf="carouselSlideItems.length > 2" data-bs-target="#researchCarouselIndicators"
+            data-bs-slide-to="2"></li>
+        <li *ngIf="carouselSlideItems.length > 3" data-bs-target="#researchCarouselIndicators"
+            data-bs-slide-to="3"></li>
+        <li *ngIf="carouselSlideItems.length > 4" data-bs-target="#researchCarouselIndicators"
+            data-bs-slide-to="4"></li>
+        <li *ngIf="carouselSlideItems.length > 5" data-bs-target="#researchCarouselIndicators"
+            data-bs-slide-to="5"></li>
+        <li *ngIf="carouselSlideItems.length > 6" data-bs-target="#researchCarouselIndicators"
+            data-bs-slide-to="6"></li>
+        <li *ngIf="carouselSlideItems.length > 7" data-bs-target="#researchCarouselIndicators"
+            data-bs-slide-to="7"></li>
+        <li *ngIf="carouselSlideItems.length > 8" data-bs-target="#researchCarouselIndicators"
+            data-bs-slide-to="8"></li>
+        <li *ngIf="carouselSlideItems.length > 9" data-bs-target="#researchCarouselIndicators"
+            data-bs-slide-to="9"></li>
+        <li *ngIf="carouselSlideItems.length > 10" data-bs-target="#researchCarouselIndicators"
+            data-bs-slide-to="10"></li>
+    </div>
+    <div class="carousel-inner">
+        <ng-container *ngFor="let carousel of carouselSlideItems; let index = index">
+            <div class="carousel-item" [ngClass]="{'active' : index === 0}">
+                <img class="d-block w-100 h-85" src="{{carousel.href}}" alt="{{carousel.altText}}">
+            </div>
+        </ng-container>
+    </div>
+    <a class="carousel-control-prev" href="#researchCarouselIndicators" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon w-25 h-25" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+    </a>
+    <a class="carousel-control-next" href="#researchCarouselIndicators" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon w-25 h-25" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+    </a>
+
+</div>
+
+<div class="col-auto d-block d-sm-none fs-5 lh-1 text-white text-outlined text-center">
+    <ng-container *ngTemplateOutlet="SubTitle"></ng-container>
+</div>
