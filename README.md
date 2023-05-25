@@ -1,4 +1,3 @@
-test
 # Website
 
 This is the [respository](https://github.com/ExoMovement/website) for the Exo-Movement organization. After your branch is review and merged with the main branch, the website should be available [here](https://exomovement.github.io/website/)
